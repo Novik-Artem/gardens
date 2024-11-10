@@ -19,25 +19,27 @@
             </div>
           </div>
           <div :class="$style.item">
-            <div :class="$style.title">Start a school or community garden</div>
+            <div :class="$style.title">Grant Opportunities</div>
             <div :class="$style.text">
-              Starting a school or community garden is a powerful way to bring
-              people together, foster hands-on learning, and promote healthy
-              living. These gardens serve as living classrooms that teach
-              sustainable practices, connect individuals with nature, and
-              inspire a sense of pride in growing and sharing fresh, nutritious
-              food.
+              As funds become available, ResiliencyGardens.org provides support
+              for school and community garden infrastructure, covering expenses
+              for construction materials, soil, seeds, and tools, as well as
+              educational resources, including instructors and workshops. We
+              invite you to explore our grant programs below to find the one
+              that best suits your needs.
             </div>
           </div>
           <div :class="$style.item">
-            <div :class="$style.title">Start a school or community garden</div>
+            <div :class="$style.title">
+              Inclusive Educational Gardens in Polish Schools 2025
+            </div>
             <div :class="$style.text">
-              Starting a school or community garden is a powerful way to bring
-              people together, foster hands-on learning, and promote healthy
-              living. These gardens serve as living classrooms that teach
-              sustainable practices, connect individuals with nature, and
-              inspire a sense of pride in growing and sharing fresh, nutritious
-              food.
+              ResiliencyGardens and Seed Programs International are working
+              together to offer support to Polish schools for environmental
+              education and to aid in the integration of special needs children,
+              including Ukrainian refugees and other non-native students into
+              their school communities. Ten schools will each be awarded up to
+              $2,000 in funding for their school garden programs.
             </div>
           </div>
         </div>
@@ -104,6 +106,7 @@
           }
           .title {
             @include F36-500;
+            line-height: 2rem;
             margin: 0 0 1.5rem 0;
             @include custom(1200) {
               font-size: 2rem;

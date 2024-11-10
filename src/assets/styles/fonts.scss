@@ -29,6 +29,13 @@
   font-weight: 500;
 }
 
+@mixin F32-500 {
+  font-family: "Raleway";
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-weight: 500;
+}
+
 @mixin F56-900 {
   font-family: "Elsie Swash Caps";
   font-size: 3.5rem;

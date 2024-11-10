@@ -23,7 +23,7 @@ export default {
     return {
       slides: [
         {
-          img: "/images/slider/test.png",
+          img: "/images/slider/1.png",
         },
         {
           img: "/images/slider/2.png",
@@ -59,11 +59,13 @@ export default {
 </script>
 
 <style lang="scss" module>
-@import "@/assets/styles/common.scss";
-
 .wrapper {
   background-color: $yellow;
   padding: 3rem 1rem;
+  margin: 0 0 6.25rem 0;
+  @include tablet {
+    margin: 0 0 4rem 0;
+  }
   .container {
     @include container;
     .title {

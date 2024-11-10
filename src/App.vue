@@ -4,7 +4,7 @@
     <About />
     <Matters />
     <Solution />
-    <Slider />
+    <Points />
   </div>
 </template>
 
@@ -13,14 +13,14 @@ import About from "./components/About.vue";
 import FullScreen from "./components/FullScreen.vue";
 import Matters from "./components/Matters.vue";
 import Solution from "./components/Solution.vue";
-import Slider from "./components/Slider.vue";
+import Points from "./components/Points.vue";
 export default {
   components: {
     FullScreen,
     About,
     Matters,
     Solution,
-    Slider,
+    Points,
   },
 };
 </script>
