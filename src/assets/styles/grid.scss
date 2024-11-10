@@ -6,3 +6,20 @@
     padding: 0 1rem;
   }
 }
+
+@mixin scrollbarX {
+  &::-webkit-scrollbar {
+    height: 0.5rem;
+    cursor: pointer;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: $black;
+    border-radius: 1rem;
+    cursor: pointer;
+  }
+  &::-webkit-scrollbar-track {
+    background: $white;
+    cursor: pointer;
+    border-radius: 1rem;
+  }
+}
