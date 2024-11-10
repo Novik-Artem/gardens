@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps:wght@400;900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps:wght@400;900&family=Elsie:wght@400;900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+@mixin F28-400 {
+  font-family: "Raleway";
+  font-size: 1.75rem;
+  line-height: 2.7rem;
+  font-weight: 400;
+}
+
+@mixin F36-400 {
+  font-family: "Raleway";
+  font-size: 2.25rem;
+  line-height: 3.4rem;
+  font-weight: 400;
+}
+
+@mixin F36-500 {
+  font-family: "Raleway";
+  font-size: 2.25rem;
+  line-height: 3.4rem;
+  font-weight: 500;
+}
+
+@mixin F56-900 {
+  font-family: "Elsie Swash Caps";
+  font-size: 3.5rem;
+  line-height: 4rem;
+  font-weight: 900;
+}
+
+@mixin F64-900 {
+  font-family: "Elsie";
+  font-size: 4rem;
+  line-height: 4.5rem;
+  font-weight: 900;
+}
+
+@mixin F105-900 {
+  font-family: "Elsie";
+  font-size: 6.5rem;
+  line-height: 7rem;
+  font-weight: 900;
+}

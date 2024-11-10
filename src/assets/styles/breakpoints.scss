@@ -1,0 +1,56 @@
+$mobile: 482px;
+$tablet: 834px;
+$bigTablet: 992px;
+$laptop: 1440px;
+$desktop: 1920px;
+
+@mixin mobile {
+  @media (max-width: $mobile) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin bigTablet {
+  @media (max-width: $bigTablet) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (max-width: $laptop) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (max-width: $desktop) {
+    @content;
+  }
+}
+
+@mixin custom($screen) {
+  @media (max-width: $screen + "px") {
+    @content;
+  }
+}
+
+@mixin scrollbarY {
+  &::-webkit-scrollbar {
+    width: 0.2rem;
+    cursor: pointer;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: $green-bg;
+    cursor: pointer;
+  }
+  &::-webkit-scrollbar-track {
+    background: $green-button;
+    cursor: pointer;
+  }
+}
