@@ -8,6 +8,14 @@
   line-height: 2.7rem;
   font-weight: 400;
 }
+
+@mixin F28-600 {
+  font-family: "Raleway";
+  font-size: 1.75rem;
+  line-height: 2.7rem;
+  font-weight: 600;
+}
+
 @mixin F20-400 {
   font-family: "Raleway";
   font-size: 1.25rem;
@@ -43,9 +51,29 @@
   font-weight: 500;
 }
 
+@mixin F36-600 {
+  font-family: "Raleway";
+  font-size: 2.25rem;
+  line-height: 3.4rem;
+  font-weight: 600;
+}
+
 @mixin F32-500 {
   font-family: "Raleway";
   font-size: 2rem;
+  line-height: 2.5rem;
+  font-weight: 500;
+}
+@mixin F64-500 {
+  font-family: "Raleway";
+  font-size: 4rem;
+  line-height: 4rem;
+  font-weight: 500;
+}
+
+@mixin F28-500 {
+  font-family: "Raleway";
+  font-size: 1.75rem;
   line-height: 2.5rem;
   font-weight: 500;
 }
@@ -69,9 +97,22 @@
   line-height: 4.5rem;
   font-weight: 900;
 }
+@mixin F64-400 {
+  font-family: "Elsie";
+  font-size: 4rem;
+  line-height: 4.5rem;
+  font-weight: 400;
+}
+
 @mixin F76-400 {
   font-family: "Elsie";
   font-size: 4.75rem;
+  line-height: 3.5rem;
+  font-weight: 400;
+}
+@mixin F48-400 {
+  font-family: "Elsie";
+  font-size: 3rem;
   line-height: 3.5rem;
   font-weight: 400;
 }

@@ -1,13 +1,18 @@
 <template>
   <div>
     <FullScreen />
-    <About />
+    <About id="about" />
     <Matters />
-    <Solution />
+    <Solution id="solution" />
     <Applicate />
-    <Start />
+    <Start id="start" />
     <Points />
-    <Impact />
+    <Impact id="impact" />
+    <Support id="support" />
+    <BrownCards />
+    <Partners id="partners" />
+    <Contacts />
+    <Footer />
   </div>
 </template>
 
@@ -20,6 +25,11 @@ import Points from "./components/Points.vue";
 import Applicate from "./components/Applicate.vue";
 import Start from "./components/Start.vue";
 import Impact from "./components/Impact.vue";
+import Support from "./components/Support.vue";
+import BrownCards from "./components/BrownCards.vue";
+import Partners from "./components/Partners.vue";
+import Contacts from "./components/Contacts.vue";
+import Footer from "./components/Footer.vue";
 export default {
   components: {
     FullScreen,
@@ -30,6 +40,11 @@ export default {
     Start,
     Points,
     Impact,
+    Support,
+    BrownCards,
+    Partners,
+    Contacts,
+    Footer,
   },
 };
 </script>
