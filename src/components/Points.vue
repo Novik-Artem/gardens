@@ -87,6 +87,10 @@ export default {
 
 <style lang="scss" module>
 .wrapper {
+  margin: 14rem 0 0 0;
+  @include custom(1325) {
+    margin: 5rem 0 0 0;
+  }
   .container {
     @include container;
     .points {
