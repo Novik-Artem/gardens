@@ -7,7 +7,7 @@
     </div>
     <div :class="$style.cards">
       <div :class="$style.card" v-for="card in cards" :key="card.image">
-        <div :class="$style.image">
+        <div :class="[$style.image, card.type ? $style.vertical : '']">
           <img :src="card.image" alt="" />
         </div>
         <div :class="$style.text">
@@ -24,6 +24,7 @@ export default {
     return {
       cards: [
         {
+          type: "vertical",
           image: "/images/partners/1.png",
           text: "Rybnik, in southern Poland, leads in sustainable food practices. The city created the Sustainable Public Meal Toolkit to promote plant-based diets among youth. Through the StratKIT+ project, Rybnik matched 10% of Resiliency Gardens grants, improving school garden infrastructure. In 2024, 1,484 students from nine schools participated in gardening, enhancing community engagement and integrating sustainable food systems into education.",
         },
@@ -40,6 +41,7 @@ export default {
           text: "Seed Programs International provides good quality seed, expertise, and training materials to humanitarian organizations working around the world to alleviate hunger and poverty. SPI’s in-kind grants are enabling schools, universities, foster homes and community organizations to establish edible gardens for learning and sharing.",
         },
         {
+          type: "vertical",
           image: "/images/partners/5.png",
           text: "Trips Beyond the Classroom offers Innovative Education that creates lifetime and generational impact by raising global awareness among youth to inspire future leaders. Safe challenges through travel, homestays, community service and virtual collaboration provide real-world experience, motivating students and teachers to go beyond the classroom! A special Beyond the Garden program has been designed to support educational institutions in creating young environmental stewards through gardening.",
         },
@@ -106,11 +108,23 @@ export default {
       }
       .image {
         @include custom(460) {
-          max-width: 8rem;
-          max-height: 8rem;
+          max-width: 20rem;
+          max-height: 20rem;
+          margin: 0 auto 1.5rem auto;
           & img {
             width: 100%;
             height: 100%;
+          }
+        }
+        &.vertical {
+          @include custom(460) {
+            max-width: 10rem;
+            max-height: 10rem;
+            margin: 0 auto 1.5rem auto;
+            & img {
+              width: 100%;
+              height: 100%;
+            }
           }
         }
       }

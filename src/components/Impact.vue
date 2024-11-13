@@ -98,6 +98,7 @@ export default {
           @include custom(630) {
             font-size: 2.2rem;
             line-height: 100%;
+            margin: 0 0 1rem 0;
           }
         }
         .text {

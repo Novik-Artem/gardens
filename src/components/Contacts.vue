@@ -48,6 +48,7 @@
       font-size: 1.5rem;
       & a {
         text-decoration: underline;
+        color: $orange;
       }
       @include custom(370) {
         font-size: 1.2rem;

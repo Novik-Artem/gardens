@@ -88,7 +88,7 @@
     }
     .text {
       .title {
-        @include F56-900;
+        @include F64-900;
         margin: 0 0 2.25rem 0;
         @include custom(1000) {
           font-size: 2.5rem;

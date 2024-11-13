@@ -72,7 +72,7 @@ export default {
       @include F64-900;
       color: $white;
       text-align: center;
-      margin: 0 0 3rem 0;
+      margin: 0 0 1.5rem 0;
       @include custom(830) {
         font-size: 3rem;
         line-height: 100%;
@@ -82,9 +82,9 @@ export default {
       }
     }
     .text {
-      @include F20-400;
-      margin: 0 auto 2rem auto;
-      max-width: 50rem;
+      @include F28-400;
+      margin: 0 auto 3rem auto;
+      max-width: 60rem;
       text-align: center;
       color: $white;
       @include custom(500) {

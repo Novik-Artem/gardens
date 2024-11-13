@@ -38,7 +38,7 @@
       @include custom(580) {
         font-size: 3rem;
         margin: 0 0 1rem 0;
-        line-height: 100%;
+        line-height: 50%;
       }
       @include custom(350) {
         font-size: 2.5rem;
@@ -53,6 +53,7 @@
       @include custom(970) {
         font-size: 1.5rem;
         margin: 0 auto 2.2rem auto;
+        line-height: 100%;
       }
       @include custom(580) {
         margin: 0;
