@@ -5,7 +5,7 @@
         <div :class="$style.title">Contact us</div>
         <div :class="$style.text">
           To learn more, please contact June Lavelle at
-          <a href="mailto:june.lavelle@gmail.com">june.lavelle@gmail.com</a>.
+          <a href="mailto:june.lavelle@gmail.com">june.lavelle+RG@gmail.com</a>.
         </div>
       </div>
       <div :class="$style.right">

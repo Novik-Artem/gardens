@@ -3,11 +3,11 @@
     <div :class="$style.container">
       <div :class="$style.title">Why it matters</div>
       <p :class="$style.text">
-        The deterioration of our natural environment endangers the well-being
+        The deterioration of our natural environment endangers our well-being
         and future of today’s youth.
       </p>
       <p :class="$style.text">
-        By equipping them with critical thinking, problem-solving skills, and
+        By equipping youth with critical thinking, problem-solving skills, and
         resilience, we prepare them to tackle global challenges and become
         responsible citizens committed to a sustainable future.
       </p>

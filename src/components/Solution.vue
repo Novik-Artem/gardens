@@ -5,7 +5,7 @@
         <img src="/images/solution/1.png" alt="" />
       </div>
       <div :class="$style.info">
-        <div :class="$style.title">Our Solution</div>
+        <div :class="$style.title">Our Solutions</div>
         <div :class="$style.items">
           <div :class="$style.item">
             <div :class="$style.title">Start a school or community garden</div>
@@ -34,7 +34,7 @@
               Inclusive Educational Gardens in Polish Schools 2025
             </div>
             <div :class="$style.text">
-              ResiliencyGardens and Seed Programs International are working
+              ResiliencyGardens.org and Seed Programs International are working
               together to offer support to Polish schools for environmental
               education and to aid in the integration of special needs children,
               including Ukrainian refugees and other non-native students into

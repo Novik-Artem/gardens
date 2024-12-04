@@ -6,14 +6,11 @@
           <span>Application Period:</span> September 15- October 15, 2024
         </div>
         <div :class="$style.text">
-          <span>Announcement of Winners:</span> October 31, 2024
-        </div>
-        <div :class="$style.text">
           <span>Implementation Period:</span> January – June 2025
         </div>
       </div>
       <div :class="$style.right">
-        <div :class="$style.title">Meet the Previous Years’ Winners</div>
+        <div :class="$style.title">Previous Years’ Winners</div>
         <div :class="$style.links">
           <div v-for="link in links" :key="link.text">
             <div :class="$style.link">
@@ -24,7 +21,13 @@
         </div>
       </div>
     </div>
-    <button :class="$style.button">Applicate now</button>
+    <a
+      href="https://secure.givelively.org/donate/resiliencygardensorg"
+      :class="$style.button"
+      target="_blank"
+    >
+      Donate now
+    </a>
   </div>
 </template>
 
@@ -142,6 +145,7 @@ export default {
     border: 0.3125rem solid $orange;
     border-radius: 0.625rem;
     background-color: $white;
+    font-weight: 500;
     cursor: pointer;
     display: flex;
     justify-content: center;

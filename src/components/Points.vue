@@ -71,12 +71,12 @@ export default {
         },
         {
           title: "Water.",
-          text: " Plants need water to gather nutrients from the soil.",
+          text: "Plants need water for essential biological procceses that enable them to grow, thrive and reproduce.",
           color: "#30b9e2",
         },
         {
           title: "Seeds.",
-          text: " Source and buy quality seeds locally that are suitable for our climate and your type of garden.",
+          text: "Source and buy quality seeds locally that are suitable for your climate and your type of garden.",
           color: "#4a9b52",
         },
       ],

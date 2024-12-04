@@ -21,10 +21,9 @@
       <div :class="$style.text">
         <div :class="$style.title">Our goal</div>
         <div :class="$style.subtext">
-          To create dynamic, hands-on learning environments that deepen
-          students’ understanding of ecological processes, while inspiring
-          people of all ages to experience the joy of growing and eating their
-          own food.
+          To create dynamic, hands-on learning environments that deepen our
+          understanding of ecological processes, while inspiring people of all
+          ages to experience the joy of growing and eating their own food.
         </div>
       </div>
     </div>
