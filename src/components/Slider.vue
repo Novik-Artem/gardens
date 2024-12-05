@@ -38,19 +38,10 @@ export default {
           img: "/images/slider/5.png",
         },
         {
-          img: "/images/slider/6.png",
-        },
-        {
-          img: "/images/slider/7.png",
-        },
-        {
           img: "/images/slider/8.png",
         },
         {
           img: "/images/slider/9.png",
-        },
-        {
-          img: "/images/slider/10.png",
         },
       ],
     };

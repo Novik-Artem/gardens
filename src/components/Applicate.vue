@@ -10,7 +10,7 @@
         </div>
       </div>
       <div :class="$style.right">
-        <div :class="$style.title">Previous Years’ Winners</div>
+        <div :class="$style.title">Meet the Previous Years’ Winners</div>
         <div :class="$style.links">
           <div v-for="link in links" :key="link.text">
             <div :class="$style.link">
@@ -21,13 +21,6 @@
         </div>
       </div>
     </div>
-    <a
-      href="https://secure.givelively.org/donate/resiliencygardensorg"
-      :class="$style.button"
-      target="_blank"
-    >
-      Donate now
-    </a>
   </div>
 </template>
 
@@ -136,23 +129,6 @@ export default {
           }
         }
       }
-    }
-  }
-  .button {
-    margin: 5rem auto 0 auto;
-    @include F32-400;
-    padding: 1.25rem 1.875rem;
-    border: 0.3125rem solid $orange;
-    border-radius: 0.625rem;
-    background-color: $white;
-    font-weight: 500;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    transition: all 0.3s ease-in-out;
-    &:hover {
-      background-color: $orange;
-      color: $white;
     }
   }
 }

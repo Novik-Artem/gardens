@@ -19,7 +19,7 @@
             </div>
           </div>
           <div :class="$style.item">
-            <div :class="$style.title">Grant Opportunities</div>
+            <div :class="$style.title">1. Grant Opportunities</div>
             <div :class="$style.text">
               As funds become available, ResiliencyGardens.org provides support
               for school and community garden infrastructure, covering expenses
@@ -31,7 +31,7 @@
           </div>
           <div :class="$style.item">
             <div :class="$style.title">
-              Inclusive Educational Gardens in Polish Schools 2025
+              2. Inclusive Educational Gardens in Polish Schools 2025
             </div>
             <div :class="$style.text">
               ResiliencyGardens.org and Seed Programs International are working
@@ -41,6 +41,16 @@
               their school communities. Ten schools will each be awarded up to
               $2,000 in funding for their school garden programs.
             </div>
+          </div>
+          <div :class="$style.item">
+            <a
+              href="https://secure.givelively.org/donate/resiliencygardensorg"
+              :class="$style.button"
+              target="_blank"
+            >
+              Donate now
+            </a>
+            <div :class="$style.subtext">Donate to support more schools</div>
           </div>
         </div>
       </div>
@@ -64,7 +74,10 @@
     }
     .image {
       max-width: 26rem;
-      max-height: 82rem;
+      max-height: 75rem;
+      @include custom(1100) {
+        max-height: 60rem;
+      }
       @include custom(940) {
         max-width: 15rem;
         max-height: 40rem;
@@ -105,7 +118,7 @@
             margin: 0;
           }
           .title {
-            @include F36-500;
+            @include F36-600;
             line-height: 2rem;
             margin: 0 0 1.5rem 0;
             @include custom(1200) {
@@ -136,6 +149,30 @@
             @include custom(530) {
               font-size: 1.1rem;
               line-height: 120%;
+            }
+          }
+          .button {
+            margin: 5rem auto 1.25rem auto;
+            @include F32-600;
+            padding: 1.25rem 1.875rem;
+            border: 0.3125rem solid $orange;
+            border-radius: 0.625rem;
+            background-color: $white;
+            font-weight: 500;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+              background-color: $orange;
+              color: $white;
+            }
+          }
+          .subtext {
+            @include F28-400;
+            text-align: center;
+            @include custom(410) {
+              font-size: 1.3rem;
             }
           }
         }

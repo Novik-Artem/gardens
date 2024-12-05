@@ -4,8 +4,6 @@
       <p>Resiliency</p>
       <p>Gardens</p>
     </div>
-
-    <div :class="$style.button">Be a partner</div>
   </div>
 </template>
 
@@ -35,21 +33,6 @@
       font-size: 4rem;
       padding: 3rem 0 0 0;
       margin-bottom: 2rem;
-    }
-  }
-  .button {
-    cursor: pointer;
-    background-color: $white;
-    padding: 1.25rem 2.5rem;
-    border-radius: 0.825rem;
-    text-align: center;
-    @include F36-500;
-    max-width: 18rem;
-    margin: 0 auto;
-    transition: all 0.3s ease-in-out;
-    &:hover {
-      background-color: $black;
-      color: $white;
     }
   }
 }
