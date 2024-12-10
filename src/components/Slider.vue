@@ -40,9 +40,9 @@ export default {
         {
           img: "/images/slider/8.png",
         },
-        {
-          img: "/images/slider/9.png",
-        },
+        // {
+        //   img: "/images/slider/9.png",
+        // },
       ],
     };
   },

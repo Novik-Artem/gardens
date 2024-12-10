@@ -10,7 +10,7 @@
         </div>
       </div>
       <div :class="$style.right">
-        <div :class="$style.title">Meet the Previous Years’ Winners</div>
+        <div :class="$style.title">Meet the Winners</div>
         <div :class="$style.links">
           <div v-for="link in links" :key="link.text">
             <div :class="$style.link">
