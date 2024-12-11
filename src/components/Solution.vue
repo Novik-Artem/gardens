@@ -8,7 +8,9 @@
         <div :class="$style.title">Our Solutions</div>
         <div :class="$style.items">
           <div :class="$style.item">
-            <div :class="$style.title">Start a school or community garden</div>
+            <div :class="($style.title, $style.big)">
+              Start a school or community garden
+            </div>
             <div :class="$style.text">
               Starting a school or community garden is a powerful way to bring
               people together, foster hands-on learning, and promote healthy
@@ -117,7 +119,7 @@
           &:last-child {
             margin: 0;
           }
-          .title {
+          .big {
             @include F36-600;
             line-height: 2rem;
             margin: 0 0 1.5rem 0;
@@ -131,6 +133,24 @@
             }
             @include custom(450) {
               font-size: 1.5rem;
+              line-height: 100%;
+              margin: 0 0 1rem 0;
+            }
+          }
+          .title {
+            @include F32-600;
+            line-height: 2rem;
+            margin: 0 0 1.5rem 0;
+            @include custom(1200) {
+              font-size: 1.8rem;
+              margin: 0 0 1rem 0;
+            }
+            @include custom(800) {
+              font-size: 1.6rem;
+              margin: 0 0 0.5rem 0;
+            }
+            @include custom(450) {
+              font-size: 1.4rem;
               line-height: 100%;
               margin: 0 0 1rem 0;
             }

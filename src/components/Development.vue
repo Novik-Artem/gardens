@@ -8,6 +8,16 @@
           <div :class="$style.text">{{ item.text }}</div>
         </div>
       </div>
+      <div :class="$style.video">
+        <iframe
+          src="https://www.youtube.com/embed/IEfkdVHzyIo?si=UoB6LcOvTLgmdLhz"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
     </div>
   </div>
 </template>
@@ -70,6 +80,7 @@ export default {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       gap: 1.5rem;
+      margin: 0 0 10rem 0;
       @include custom(970) {
         grid-template-columns: 1fr 1fr;
         .column:last-child {
@@ -96,6 +107,25 @@ export default {
         @include custom(1060) {
           font-size: 1.5rem;
         }
+      }
+    }
+    .video {
+      margin-bottom: -15rem;
+      max-width: 88.25rem;
+      height: 42.375rem;
+      @include custom(1010) {
+        height: 30rem;
+        margin-bottom: -10rem;
+      }
+      @include custom(670) {
+        height: 20rem;
+        margin-bottom: 0;
+      }
+      & iframe {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: 1.25rem;
       }
     }
   }

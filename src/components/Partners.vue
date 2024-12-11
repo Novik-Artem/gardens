@@ -13,7 +13,7 @@
         >
           <img :src="card.image" alt="" />
         </div>
-        <div :class="card.link ? $style.orange : ''">
+        <a :href="card.file" download :class="card.link ? $style.orange : ''">
           <div :class="$style.text">
             {{ card.text }}
           </div>
@@ -21,7 +21,7 @@
             {{ card.link }}
             <img src="/icons/arrow-white.svg" alt="" />
           </div>
-        </div>
+        </a>
       </div>
     </div>
   </div>
@@ -57,6 +57,7 @@ export default {
         {
           text: "Join us in growing a healththier, more sustainable future",
           link: "Become a Corporate Sponsor",
+          file: "/files/Corporate-appeal.pdf",
         },
       ],
     };
@@ -69,6 +70,10 @@ export default {
   @include container;
   margin-top: 6.25rem;
   margin-bottom: 6.25rem;
+  padding-top: 6.25rem;
+  @include custom(670) {
+    padding-top: 0;
+  }
   @include tablet {
     margin-top: 4rem;
     margin-bottom: 4rem;
