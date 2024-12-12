@@ -43,22 +43,22 @@ export default {
         {
           image: "/images/activities/1.png",
           text: "Design and Placing the garden",
-          file: "/files/1.pdf",
+          file: "/files/Designing and Placing a School Garden.pdf",
         },
         {
           image: "/images/activities/2.png",
           text: "Starting a School Garden Program",
-          file: "/files/2.pdf",
+          file: "/files/Starting a school garden program.pdf",
         },
         {
           image: "/images/activities/3.png",
           text: "Vermi-composting for Plant & Planet health",
-          file: "/files/3.pdf",
+          file: "/files/Vermi-composting for Plant & Planet Health.pdf",
         },
         {
           image: "/images/activities/4.png",
           text: "Sustainable Gardening Ideasfrom Around the Globe",
-          file: "/files/4.pdf",
+          file: "/files/Sustainable-Gardening-Around-Globe-lesson.pdf",
         },
       ],
     };
@@ -110,7 +110,7 @@ export default {
     @include custom(830) {
       grid-template-columns: 1fr 1fr;
     }
-    @include custom(540) {
+    @include custom(580) {
       grid-template-columns: 1fr;
     }
     .card {
@@ -121,7 +121,7 @@ export default {
       justify-content: space-between;
       .image {
         max-width: 30rem;
-        height: 29.375rem;
+        height: 22rem;
         margin: 0 0 6.25rem 0;
         & img {
           width: 100%;
@@ -129,21 +129,20 @@ export default {
           border-radius: 1.25rem 1.25rem 0 0;
         }
         @include custom(1140) {
-          height: 23rem;
           margin: 0 0 4rem 0;
         }
-        @include custom(960) {
+        @include custom(990) {
           height: 18rem;
+        }
+        @include custom(860) {
+          margin: 0 0 2rem 0;
+          height: 16rem;
         }
         @include custom(830) {
-          margin: 0 0 2rem 0;
-          height: 22rem;
-        }
-        @include custom(620) {
-          margin: 0 0 2rem 0;
           height: 18rem;
+          margin: 0 0 2rem 0;
         }
-        @include custom(540) {
+        @include custom(580) {
           max-width: 20rem;
           height: 100%;
           margin: 0 auto;
@@ -168,7 +167,7 @@ export default {
         }
         .file {
           padding-top: 1rem;
-          border-top: 3px solid $black;
+          border-top: 2px solid $black;
           @include F28-500;
           font-size: 1.625rem;
           display: flex;

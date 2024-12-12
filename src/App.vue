@@ -7,9 +7,9 @@
     <Applicate />
     <Start id="start" />
     <Points />
-    <Impact id="impact" />
-    <Support id="support" />
-    <BrownCards />
+    <!-- <Impact id="impact" /> -->
+    <!-- <Support id="support" /> -->
+    <!-- <BrownCards /> -->
     <Development />
     <Activities />
     <Partners id="partners" />
