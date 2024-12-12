@@ -8,16 +8,13 @@
           <div :class="$style.text">{{ item.text }}</div>
         </div>
       </div>
-      <div :class="$style.video">
-        <iframe
-          src="https://www.youtube.com/embed/IEfkdVHzyIo?si=UoB6LcOvTLgmdLhz"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
-      </div>
+      <video
+        :class="$style.video"
+        controls
+        ref="video"
+        src="/video/1.mp4"
+        type="video/mp4"
+      ></video>
     </div>
   </div>
 </template>
@@ -116,6 +113,10 @@ export default {
       }
     }
     .video {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      border-radius: 1.25rem;
       margin-bottom: -15rem;
       max-width: 88.25rem;
       height: 42.375rem;
@@ -126,12 +127,6 @@ export default {
       @include custom(670) {
         height: 20rem;
         margin-bottom: 0;
-      }
-      & iframe {
-        object-fit: cover;
-        width: 100%;
-        height: 100%;
-        border-radius: 1.25rem;
       }
     }
   }

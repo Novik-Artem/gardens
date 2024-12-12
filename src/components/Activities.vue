@@ -14,21 +14,16 @@
         </div>
         <div :class="$style.info">
           <div :class="$style.text">{{ item.text }}</div>
-          <div :class="$style.actions">
-            <div :class="$style.file">
-              Download
-              <img src="/icons/download.svg" alt="" />
-            </div>
-            <div :class="$style.file">
-              Sourcelink
-              <img src="/icons/link.svg" alt="" />
-            </div>
+
+          <div :class="$style.file">
+            <a :href="item.file" download>Download</a>
+            <img src="/icons/download.svg" alt="" />
           </div>
         </div>
       </div>
       <div :class="$style.video">
         <iframe
-          src="https://www.youtube.com/embed/IEfkdVHzyIo?si=UoB6LcOvTLgmdLhz"
+          src="https://www.youtube.com/embed/7Qwb-acXjM0?si=50F3CnCszJ3afQkQ"
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -48,26 +43,22 @@ export default {
         {
           image: "/images/activities/1.png",
           text: "Design and Placing the garden",
-          file: "",
-          link: "",
+          file: "/files/1.pdf",
         },
         {
           image: "/images/activities/2.png",
           text: "Starting a School Garden Program",
-          file: "",
-          link: "",
+          file: "/files/2.pdf",
         },
         {
           image: "/images/activities/3.png",
           text: "Vermi-composting for Plant & Planet health",
-          file: "",
-          link: "",
+          file: "/files/3.pdf",
         },
         {
           image: "/images/activities/4.png",
           text: "Sustainable Gardening Ideasfrom Around the Globe",
-          file: "",
-          link: "",
+          file: "/files/4.pdf",
         },
       ],
     };
@@ -175,26 +166,15 @@ export default {
             font-size: 1.2rem;
           }
         }
-
-        .actions {
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
+        .file {
           padding-top: 1rem;
           border-top: 3px solid $black;
-          @include custom(1080) {
-            flex-direction: column;
-            gap: 1rem;
-            align-items: flex-start;
-          }
-          .file {
-            @include F28-500;
-            font-size: 1.625rem;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            cursor: pointer;
-          }
+          @include F28-500;
+          font-size: 1.625rem;
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          cursor: pointer;
         }
       }
     }

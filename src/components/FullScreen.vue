@@ -27,11 +27,10 @@
     @include custom(500) {
       font-size: 5rem;
       line-height: 100%;
-      padding: 4rem 0 0 0;
     }
     @include custom(375) {
       font-size: 4rem;
-      padding: 3rem 0 0 0;
+      padding: 8rem 0 0 0;
       margin-bottom: 2rem;
     }
   }
