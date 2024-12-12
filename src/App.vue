@@ -11,6 +11,7 @@
     <Support id="support" />
     <BrownCards />
     <Development />
+    <Activities />
     <Partners id="partners" />
     <Contacts />
     <Footer />
@@ -29,6 +30,7 @@ import Impact from "./components/Impact.vue";
 import Support from "./components/Support.vue";
 import BrownCards from "./components/BrownCards.vue";
 import Development from "./components/Development.vue";
+import Activities from "./components/Activities.vue";
 import Partners from "./components/Partners.vue";
 import Contacts from "./components/Contacts.vue";
 import Footer from "./components/Footer.vue";
@@ -45,6 +47,7 @@ export default {
     Support,
     BrownCards,
     Development,
+    Activities,
     Partners,
     Contacts,
     Footer,

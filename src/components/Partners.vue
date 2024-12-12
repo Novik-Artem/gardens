@@ -70,10 +70,6 @@ export default {
   @include container;
   margin-top: 6.25rem;
   margin-bottom: 6.25rem;
-  padding-top: 6.25rem;
-  @include custom(670) {
-    padding-top: 0;
-  }
   @include tablet {
     margin-top: 4rem;
     margin-bottom: 4rem;

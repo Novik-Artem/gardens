@@ -81,6 +81,12 @@ export default {
       grid-template-columns: 1fr 1fr 1fr;
       gap: 1.5rem;
       margin: 0 0 10rem 0;
+      @include custom(1010) {
+        margin: 0 0 8rem 0;
+      }
+      @include custom(670) {
+        margin: 0 0 5rem 0;
+      }
       @include custom(970) {
         grid-template-columns: 1fr 1fr;
         .column:last-child {
