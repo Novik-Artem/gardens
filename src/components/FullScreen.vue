@@ -4,6 +4,10 @@
       <p>Resiliency</p>
       <p>Gardens</p>
     </div>
+    <div :class="$style.subtitle">Test subtitle that is centred</div>
+    <div :class="$style.button">
+      <a href="">Donate now</a>
+    </div>
   </div>
 </template>
 
@@ -32,6 +36,33 @@
       font-size: 4rem;
       padding: 8rem 0 0 0;
       margin-bottom: 2rem;
+    }
+  }
+  .subtitle {
+    @include F36-600;
+    text-align: center;
+    color: $white;
+    margin: 0 0 4rem 0;
+    @include custom(440) {
+      font-size: 1.8rem;
+    }
+    @include custom(340) {
+      font-size: 1.6rem;
+    }
+  }
+  .button {
+    @include F36-600;
+    color: $white;
+    text-align: center;
+    & a {
+      padding: 1.5rem 3rem;
+      background-color: $black;
+      border-radius: 0.625rem;
+      transition: all 0.5s ease-in-out;
+      &:hover {
+        background-color: $white;
+        color: $black;
+      }
     }
   }
 }
