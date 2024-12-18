@@ -6,11 +6,28 @@
         There are many ways to garden: in-ground garden beds, raised rows,
         raised garden beds, straw bales, and container gardens
       </div>
+
       <div :class="$style.slider">
-        <div :class="$style.slide" v-for="item in slides" :key="item.img">
-          <div :class="$style.image">
-            <img :src="item.img" alt="" />
+        <div @click="prev" :class="$style.button">
+          <img src="/icons/arrow.svg" alt="" />
+        </div>
+        <div :class="$style.container">
+          <div
+            :class="$style.wrapper2"
+            :style="{
+              transform: `translateX(${-currentIndex * (100 / count)}%)`,
+            }"
+          >
+            <img
+              v-for="(image, index) in images"
+              :key="index"
+              :src="image.img"
+              :class="$style.image"
+            />
           </div>
+        </div>
+        <div @click="next" :class="($style.button, $style.next)">
+          <img src="/icons/arrow.svg" alt="" />
         </div>
       </div>
     </div>
@@ -19,9 +36,19 @@
 
 <script>
 export default {
+  mounted() {
+    if (window.innerWidth < 950) {
+      this.count = 2;
+    }
+    if (window.innerWidth < 650) {
+      this.count = 1;
+    }
+  },
   data() {
     return {
-      slides: [
+      currentIndex: 0,
+      count: 3,
+      images: [
         {
           img: "/images/slider/1.png",
         },
@@ -40,11 +67,20 @@ export default {
         {
           img: "/images/slider/8.png",
         },
-        // {
-        //   img: "/images/slider/9.png",
-        // },
       ],
     };
+  },
+  methods: {
+    next() {
+      if (this.currentIndex < this.images.length - this.count) {
+        this.currentIndex++;
+      }
+    },
+    prev() {
+      if (this.currentIndex > 0) {
+        this.currentIndex--;
+      }
+    },
   },
 };
 </script>
@@ -58,7 +94,6 @@ export default {
     margin: 0 0 4rem 0;
   }
   .container {
-    @include container;
     .title {
       @include F64-900;
       color: $white;
@@ -85,25 +120,69 @@ export default {
     .slider {
       display: flex;
       align-items: center;
-      gap: 0.5rem;
-      min-width: 100%;
-      overflow-x: auto;
-      @include scrollbarX;
-      padding-bottom: 0.5rem;
+      justify-content: center;
+      gap: 1rem;
+      .button {
+        background-color: $white;
+        border-radius: 50%;
+        padding: 0.8rem;
+        cursor: pointer;
 
-      .slide {
-        white-space: nowrap;
-
-        .image {
-          width: 25rem;
-          height: 36rem;
-          @include custom(500) {
-            width: 21rem;
-            height: 32rem;
+        & img {
+          width: 2rem;
+          height: 2rem;
+          transform: rotate(225deg);
+          @include custom(420) {
+            width: 1.2rem;
+            height: 1.2rem;
           }
-          & img {
-            width: 100%;
-            height: 100%;
+        }
+      }
+      .next {
+        background-color: $white;
+        border-radius: 50%;
+        padding: 0.8rem;
+        cursor: pointer;
+
+        & img {
+          width: 2rem;
+          height: 2rem;
+          transform: rotate(45deg);
+          @include custom(420) {
+            width: 1.2rem;
+            height: 1.2rem;
+          }
+        }
+      }
+
+      .container {
+        overflow: hidden;
+        max-width: 998px;
+        @include custom(940) {
+          width: 500px;
+        }
+        @include custom(650) {
+          width: 300px;
+        }
+        .wrapper2 {
+          display: flex;
+          align-items: center;
+          transition: all 0.3s ease-in-out;
+
+          .image {
+            width: calc(100% / 3 - 11px);
+            height: auto;
+            margin-right: 11px;
+            @include custom(940) {
+              width: calc(100% / 2 - 11px);
+            }
+            @include custom(650) {
+              width: 100%;
+              margin-right: 0;
+            }
+            &:last-child {
+              margin-right: 0;
+            }
           }
         }
       }
