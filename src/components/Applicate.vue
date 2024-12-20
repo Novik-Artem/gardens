@@ -3,7 +3,7 @@
     <div :class="$style.title">Meet the Winners</div>
     <div :class="$style.links">
       <div v-for="link in links" :key="link.text">
-        <a :href="link.file" download :class="$style.link">
+        <a :href="link.file" target="_blank" :class="$style.link">
           <div>{{ link.text }}</div>
           <img :src="link.icon" alt="" />
         </a>

@@ -16,7 +16,7 @@
           <div :class="$style.text">{{ item.text }}</div>
 
           <div :class="$style.file">
-            <a :href="item.file" download>Download</a>
+            <a :href="item.file" target="_blank">Download</a>
             <img src="/icons/download.svg" alt="" />
           </div>
         </div>

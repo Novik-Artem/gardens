@@ -13,7 +13,11 @@
         >
           <img :src="card.image" alt="" />
         </div>
-        <a :href="card.file" download :class="card.link ? $style.orange : ''">
+        <a
+          :href="card.file"
+          target="_blank"
+          :class="card.link ? $style.orange : ''"
+        >
           <div :class="$style.text">
             {{ card.text }}
           </div>
