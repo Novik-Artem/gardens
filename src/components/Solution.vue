@@ -26,32 +26,22 @@
             </div>
           </div>
           <div :class="$style.subtext">
-            <li>Inclusive Educational Gardens in Polish Schools 2025s</li>
-            <div>
-              ResiliencyGardens.org and Seed Programs International are working
-              together to offer support to Polish schools for environmental
-              education and to aid in the integration of special needs children,
-              including Ukrainian refugees and other non-native students into
-              their school communities. Ten schools will each be awarded up to
-              $2,000 in funding for their school garden programs.
-            </div>
+            <li>Inclusive Educational Gardens in Polish Schools</li>
           </div>
         </div>
         <Applicate :class="$style.app" />
       </div>
       <div :class="$style.column">
         <div :class="$style.item">
-          <div :class="$style.subtitle">
-            2. Start a school or community garden
+          <div :class="$style.image">
+            <img src="/images/solution/1-horizontal.png" alt="" />
           </div>
+          <div :class="$style.subtitle">2. Start your own garden</div>
           <div :class="$style.text">
             Anyone can grow vegetables and everyone enjoys watching a seed they
             planted sprout and grow. Whether on a windowsill, a balcony or in a
-            garden bed, we can all make a difference
+            garden bed, we can all make a difference.
           </div>
-        </div>
-        <div :class="$style.image">
-          <img src="/images/solution/1.png" alt="" />
         </div>
         <Applicate :class="$style.adaptive" />
       </div>
@@ -71,7 +61,7 @@ export default {
 <style lang="scss" module>
 .container {
   @include container;
-  margin-bottom: 6.25rem;
+  // margin-bottom: 6.25rem;
   @include custom(720) {
     margin-bottom: 4rem;
   }
@@ -91,10 +81,10 @@ export default {
     }
   }
   .content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
-    justify-content: space-between;
+    // display: grid;
+    // grid-template-columns: 1fr 1fr;
+    // gap: 3rem;
+    // justify-content: space-between;
     @include custom(875) {
       grid-template-columns: 1fr;
       gap: 1rem;
@@ -121,7 +111,7 @@ export default {
         }
         .text {
           @include F28-400;
-          max-width: 54rem;
+          // max-width: 54rem;
           margin-bottom: 1.5rem;
           @include custom(1200) {
             font-size: 1.75rem;
@@ -166,7 +156,7 @@ export default {
             }
           }
           & div {
-            max-width: 54rem;
+            // max-width: 54rem;
             @include F28-400;
             font-size: 1.6rem;
             @include custom(1200) {
@@ -180,8 +170,8 @@ export default {
         }
       }
       .image {
-        margin: 0 auto;
-        max-width: 24rem;
+        margin: 30px auto;
+        max-width: 60rem;
         max-height: 60rem;
         @include custom(875) {
           display: none;

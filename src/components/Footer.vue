@@ -43,41 +43,44 @@ export default {
       links: {
         first: [
           {
-            text: "About",
+            text: "Donate",
+            id: "main",
+          },
+          {
+            text: "About us",
             id: "about",
           },
           {
-            text: "Solution",
+            text: "Our solutions",
             id: "solution",
+          },
+        ],
+        second: [
+          {
+            text: "Meet the winners",
+            id: "winners",
           },
           {
             text: "Where to start",
             id: "start",
           },
-        ],
-        second: [
           {
-            text: "Impact",
-            id: "impact",
-          },
-          {
-            text: "Winners",
-          },
-          {
-            text: "Presentation",
+            text: "What you need",
+            id: "slider",
           },
         ],
         third: [
           {
-            text: "Support",
-            id: "support",
+            text: "Children & garden",
+            id: "development",
+          },
+          {
+            text: "Learning resources",
+            id: "resources",
           },
           {
             text: "Partners",
             id: "partners",
-          },
-          {
-            text: "Learning resources",
           },
         ],
       },

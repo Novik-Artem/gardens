@@ -1,25 +1,24 @@
 <template>
   <div :class="$style.content">
-    <div :class="$style.title">Meet the Winners</div>
-    <div :class="$style.links">
-      <div v-for="link in links" :key="link.text">
-        <a :href="link.file" target="_blank" :class="$style.link">
-          <div>{{ link.text }}</div>
-          <img :src="link.icon" alt="" />
-        </a>
+    <div :class="$style.title" id="winners">Meet the Winners</div>
+    <div :class="$style.cta">
+      <div :class="$style.links">
+        <div v-for="link in links" :key="link.text">
+          <a :href="link.file" target="_blank" :class="$style.link">
+            <div>{{ link.text }}</div>
+            <img :src="link.icon" alt="" />
+          </a>
+        </div>
       </div>
+      <a
+        href="https://secure.givelively.org/donate/resiliencygardensorg"
+        :class="$style.button"
+        target="_blank"
+      >
+        Donate now
+      </a>
+      <div :class="$style.donate">Donate to support more schools</div>
     </div>
-    <div :class="$style.text">
-      <span>Implementation Period:</span> January - June 2025
-    </div>
-    <a
-      href="https://secure.givelively.org/donate/resiliencygardensorg"
-      :class="$style.button"
-      target="_blank"
-    >
-      Donate now
-    </a>
-    <div :class="$style.donate">Donate to support more schools</div>
   </div>
 </template>
 

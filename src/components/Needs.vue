@@ -3,22 +3,6 @@
     <div :class="$style.container">
       <div :class="$style.points">
         <div :class="$style.list">
-          <div v-for="item in points" :key="item.title" :class="$style.li">
-            <span :class="$style.title" :style="{ color: item.color }">
-              {{ item.title }}
-            </span>
-            <span>{{ item.text }}</span>
-          </div>
-        </div>
-        <div :class="$style.image">
-          <img src="/images/points/2.png" alt="" />
-        </div>
-      </div>
-    </div>
-    <Slider />
-    <!-- <div :class="$style.container">
-      <div :class="$style.points">
-        <div :class="$style.list">
           <div :class="$style.li">
             <div :class="$style.purple">
               People who have access to their own vegetable garden
@@ -46,48 +30,12 @@
           <img src="/images/points/1.svg" alt="" />
         </div>
       </div>
-    </div> -->
+    </div>
   </div>
 </template>
 
-<script>
-import Slider from "./Slider.vue";
-export default {
-  components: {
-    Slider,
-  },
-  data() {
-    return {
-      points: [
-        {
-          title: "Soil.",
-          text: " Great soil is essential to growing vegetables, fruits, and other plant life.",
-          color: "#ff7235",
-        },
-        {
-          title: "Sun.",
-          text: " Most vegetables need at least 6 hours of unobstructed sun or artificial light per day, although some crops, such as broccoli, lettuce, spinach, and other greens, can tolerate less.",
-          color: "#ffbe21",
-        },
-        {
-          title: "Water.",
-          text: "Plants need water for essential biological procceses that enable them to grow, thrive and reproduce.",
-          color: "#30b9e2",
-        },
-        {
-          title: "Seeds.",
-          text: "Source and buy quality seeds locally that are suitable for your climate and your type of garden.",
-          color: "#4a9b52",
-        },
-      ],
-    };
-  },
-};
-</script>
-
 <style lang="scss" module>
 .wrapper {
-  margin: 14rem 0 0 0;
   @include custom(1325) {
     margin: 5rem 0 0 0;
   }

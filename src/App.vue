@@ -1,16 +1,17 @@
 <template>
   <div>
-    <FullScreen />
+    <FullScreen id="main" />
     <About id="about" />
     <Matters />
     <Solution id="solution" />
+    <Needs />
     <Start id="start" />
     <Points />
     <!-- <Impact id="impact" /> -->
     <!-- <Support id="support" /> -->
     <!-- <BrownCards /> -->
-    <Development />
-    <Activities />
+    <Development id="development" />
+    <Activities id="resources" />
     <Partners id="partners" />
     <Contacts />
     <Footer />
@@ -22,6 +23,7 @@ import About from "./components/About.vue";
 import FullScreen from "./components/FullScreen.vue";
 import Matters from "./components/Matters.vue";
 import Solution from "./components/Solution.vue";
+import Needs from "./components/Needs.vue";
 import Points from "./components/Points.vue";
 import Start from "./components/Start.vue";
 import Impact from "./components/Impact.vue";
@@ -38,6 +40,7 @@ export default {
     About,
     Matters,
     Solution,
+    Needs,
     Start,
     Points,
     Impact,

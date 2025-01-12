@@ -53,7 +53,7 @@ export default {
   }
   padding: 5.625rem 0;
   background-color: $light-brown;
-  margin-top: 5rem;
+  // margin-top: 5rem;
   .container {
     @include container;
     .title {

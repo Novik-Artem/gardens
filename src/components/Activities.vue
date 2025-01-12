@@ -16,7 +16,7 @@
           <div :class="$style.text">{{ item.text }}</div>
 
           <div :class="$style.file">
-            <a :href="item.file" target="_blank">Download</a>
+            <a :href="item.file" target="_blank">View Document</a>
             <img src="/icons/download.svg" alt="" />
           </div>
         </div>
@@ -174,6 +174,9 @@ export default {
           align-items: center;
           gap: 0.5rem;
           cursor: pointer;
+          img {
+            rotate: -90deg;
+          }
         }
       }
     }

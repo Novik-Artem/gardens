@@ -1,7 +1,7 @@
 <template>
   <div :class="$style.wrapper">
     <div :class="$style.container">
-      <div :class="$style.title">What you need</div>
+      <div :class="$style.title" id="slider">What you need</div>
       <div :class="$style.text">
         There are many ways to garden: in-ground garden beds, raised rows,
         raised garden beds, straw bales, and container gardens
@@ -89,7 +89,7 @@ export default {
 .wrapper {
   background-color: $yellow;
   padding: 3rem 1rem;
-  margin: 0 0 6.25rem 0;
+  // margin: 0 0 6.25rem 0;
   @include tablet {
     margin: 0 0 4rem 0;
   }

@@ -19,7 +19,7 @@
         <img src="/images/about/2.png" alt="" />
       </div>
       <div :class="$style.text">
-        <div :class="$style.title">Our goal</div>
+        <div :class="$style.title" id="goal">Our goal</div>
         <div :class="$style.subtext">
           To create dynamic, hands-on learning environments that deepen our
           understanding of ecological processes, while inspiring people of all
@@ -29,7 +29,7 @@
     </div>
     <div :class="$style.row">
       <div :class="$style.text">
-        <div :class="$style.title">Our vision</div>
+        <div :class="$style.title" id="vision">Our vision</div>
         <div :class="$style.subtext">
           A world where communities are resilient, self-sufficient, and actively
           engaged in sustainable food systems that foster personal well-being

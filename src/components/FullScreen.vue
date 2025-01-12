@@ -4,9 +4,17 @@
       <p>Resiliency</p>
       <p>Gardens</p>
     </div>
-    <div :class="$style.subtitle">Test subtitle that is centred</div>
+    <div :class="$style.subtitle">
+      Cultivating resilience, <br />
+      one garden at a time
+    </div>
     <div :class="$style.button">
-      <a href="">Donate now</a>
+      <a
+        href="https://secure.givelively.org/donate/resiliencygardensorg"
+        target="_blank"
+      >
+        Donate now
+      </a>
     </div>
   </div>
 </template>
