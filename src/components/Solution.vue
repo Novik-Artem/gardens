@@ -168,14 +168,15 @@ export default {
             }
           }
         }
+        order: 1;
       }
       .image {
         margin: 30px auto;
-        max-width: 60rem;
+        max-width: 40rem;
         max-height: 60rem;
-        @include custom(875) {
-          display: none;
-        }
+        // @include custom(875) {
+        //   display: none;
+        // }
         & img {
           width: 100%;
           height: 100%;
@@ -191,6 +192,10 @@ export default {
         @include custom(875) {
           display: block;
         }
+      }
+      @include custom(875) {
+        display: flex;
+        flex-direction: column;
       }
     }
   }
