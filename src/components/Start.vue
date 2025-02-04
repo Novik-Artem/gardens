@@ -1,11 +1,11 @@
 <template>
   <div :class="$style.wrapper">
     <div :class="$style.container">
-      <div :class="$style.title">Where to start?</div>
+      <div :class="$style.title">{{ $t("startSection.title") }}</div>
       <div :class="$style.text">
-        If you’ve no land, it doesn’t mean you can’t garden.
+        {{ $t("startSection.firstText") }}
       </div>
-      <div :class="$style.text">A garden has four basic needs:</div>
+      <div :class="$style.text">{{ $t("startSection.secondText") }}</div>
     </div>
     <img src="/images/start/1.png" alt="" :class="$style.image" />
     <img src="/images/start/2.png" alt="" :class="$style.image2" />

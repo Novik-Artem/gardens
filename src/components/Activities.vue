@@ -1,11 +1,8 @@
 <template>
   <div :class="$style.container">
-    <div :class="$style.title">Learning Resources & Activities</div>
+    <div :class="$style.title">{{ $t("activitiesSection.title") }}</div>
     <div :class="$style.subtitle">
-      At Resiliency Gardens, we're always on the lookout for helpful print and
-      video resources for children and adults to make gardening fun and
-      educational. Take a look at these topics and click to learn more and
-      download a free printable
+      {{ $t("activitiesSection.text") }}
     </div>
     <div :class="$style.content">
       <div :class="$style.card" v-for="item in cards" :key="item.title">
@@ -36,32 +33,36 @@
 </template>
 
 <script>
+import dataEn from "../locales/en.json";
+import dataPl from "../locales/pl.json";
 export default {
   data() {
     return {
-      cards: [
-        {
-          image: "/images/activities/1.png",
-          text: "Design and Placing the garden",
-          file: "/files/Designing and Placing a School Garden.pdf",
-        },
-        {
-          image: "/images/activities/2.png",
-          text: "Starting a School Garden Program",
-          file: "/files/Starting a school garden program.pdf",
-        },
-        {
-          image: "/images/activities/3.png",
-          text: "Vermi-composting for Plant & Planet health",
-          file: "/files/Vermi-composting for Plant & Planet Health.pdf",
-        },
-        {
-          image: "/images/activities/4.png",
-          text: "Sustainable Gardening Ideasfrom Around the Globe",
-          file: "/files/Sustainable-Gardening-Around-Globe-lesson.pdf",
-        },
-      ],
+      dataEn: dataEn.activitiesSection.cards,
+      dataPl: dataPl.activitiesSection.cards,
+      cards: [],
     };
+  },
+  computed: {
+    locale() {
+      return this.$i18n.locale;
+    },
+  },
+  mounted() {
+    if (this.$i18n.locale === "en") {
+      this.cards = this.dataEn;
+    } else {
+      this.cards = this.dataPl;
+    }
+  },
+  watch: {
+    locale() {
+      if (this.$i18n.locale === "en") {
+        this.cards = this.dataEn;
+      } else {
+        this.cards = this.dataPl;
+      }
+    },
   },
 };
 </script>

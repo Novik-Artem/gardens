@@ -1,5 +1,6 @@
 <template>
   <div>
+    <LocalSwitcher />
     <FullScreen id="main" />
     <About id="about" />
     <Matters />
@@ -13,12 +14,14 @@
     <Development id="development" />
     <Activities id="resources" />
     <Partners id="partners" />
+    <Sponsors />
     <Contacts />
     <Footer />
   </div>
 </template>
 
 <script>
+import LocalSwitcher from "./components/LocalSwitcher.vue";
 import About from "./components/About.vue";
 import FullScreen from "./components/FullScreen.vue";
 import Matters from "./components/Matters.vue";
@@ -32,10 +35,12 @@ import BrownCards from "./components/BrownCards.vue";
 import Development from "./components/Development.vue";
 import Activities from "./components/Activities.vue";
 import Partners from "./components/Partners.vue";
+import Sponsors from "./components/Sponsors.vue";
 import Contacts from "./components/Contacts.vue";
 import Footer from "./components/Footer.vue";
 export default {
   components: {
+    LocalSwitcher,
     FullScreen,
     About,
     Matters,
@@ -49,6 +54,7 @@ export default {
     Development,
     Activities,
     Partners,
+    Sponsors,
     Contacts,
     Footer,
   },

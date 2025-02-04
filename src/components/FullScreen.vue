@@ -5,8 +5,8 @@
       <p>Gardens</p>
     </div>
     <div :class="$style.subtitle">
-      Cultivating resilience, <br />
-      one garden at a time
+      {{ $t("fullScreen.subtitleFirst") }} <br />
+      {{ $t("fullScreen.subtitleSecond") }}
     </div>
     <div :class="$style.button">
       <a

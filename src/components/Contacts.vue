@@ -2,9 +2,11 @@
   <div :class="$style.container">
     <div :class="$style.content">
       <div :class="$style.left">
-        <div :class="$style.title">Contact us</div>
+        <div :class="$style.title">
+          {{ $t("contacts.title") }}
+        </div>
         <div :class="$style.text">
-          To learn more, please contact June Lavelle at
+          {{ $t("contacts.text") }}
           <a href="mailto:june.lavelle@gmail.com">june.lavelle+RG@gmail.com</a>.
         </div>
       </div>

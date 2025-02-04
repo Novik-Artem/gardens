@@ -52,35 +52,39 @@
 
 <script>
 import Slider from "./Slider.vue";
+import dataEn from "../locales/en.json";
+import dataPl from "../locales/pl.json";
 export default {
   components: {
     Slider,
   },
   data() {
     return {
-      points: [
-        {
-          title: "Soil.",
-          text: " Great soil is essential to growing vegetables, fruits, and other plant life.",
-          color: "#ff7235",
-        },
-        {
-          title: "Sun.",
-          text: " Most vegetables need at least 6 hours of unobstructed sun or artificial light per day, although some crops, such as broccoli, lettuce, spinach, and other greens, can tolerate less.",
-          color: "#ffbe21",
-        },
-        {
-          title: "Water.",
-          text: "Plants need water for essential biological procceses that enable them to grow, thrive and reproduce.",
-          color: "#30b9e2",
-        },
-        {
-          title: "Seeds.",
-          text: "Source and buy quality seeds locally that are suitable for your climate and your type of garden.",
-          color: "#4a9b52",
-        },
-      ],
+      dataEn: dataEn.pointsSection,
+      dataPl: dataPl.pointsSection,
+      points: [],
     };
+  },
+  computed: {
+    locale() {
+      return this.$i18n.locale;
+    },
+  },
+  mounted() {
+    if (this.$i18n.locale === "en") {
+      this.points = this.dataEn;
+    } else {
+      this.points = this.dataPl;
+    }
+  },
+  watch: {
+    locale() {
+      if (this.$i18n.locale === "en") {
+        this.points = this.dataEn;
+      } else {
+        this.points = this.dataPl;
+      }
+    },
   },
 };
 </script>

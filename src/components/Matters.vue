@@ -1,15 +1,12 @@
 <template>
   <div :class="$style.wrapper">
     <div :class="$style.container">
-      <div :class="$style.title">Why it matters</div>
+      <div :class="$style.title">{{ $t("mattersSection.title") }}</div>
       <p :class="$style.text">
-        The deterioration of our natural environment endangers our well-being
-        and future of today’s youth.
+        {{ $t("mattersSection.firstText") }}
       </p>
       <p :class="$style.text">
-        By equipping youth with critical thinking, problem-solving skills, and
-        resilience, we prepare them to tackle global challenges and become
-        responsible citizens committed to a sustainable future.
+        {{ $t("mattersSection.secondText") }}
       </p>
     </div>
   </div>

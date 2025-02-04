@@ -1,0 +1,199 @@
+{
+  "fullScreen": {
+    "subtitleFirst": "Kultywowanie wytrwałości,",
+    "subtitleSecond": "jeden ogród na raz"
+  },
+  "aboutSection": {
+    "firstTitle": "O nas",
+    "firstText": "ResiliencyGardens.org to organizacja charytatywna zajmująca się edukacją przyszłych pokoleń poprzez inwestowanie w ogrody szkolne i społeczne, które reprezentują zrównoważone praktyki rolnicze, promują zdrowy tryb życia i wspierają zarządzanie środowiskiem.",
+    "secondTitle": "Nasz cel",
+    "secondText": "Tworzenie dynamicznych, praktycznych środowisk edukacyjnych, które pogłębiają nasze zrozumienie procesów ekologicznych, jednocześnie inspirując ludzi w każdym wieku do czerpania radości z uprawy i jedzenia własnej żywności.",
+    "thirdTitle": "Nasza wizja",
+    "thirdText": "Świat, w którym społeczności są wytrwałe, samowystarczalne i aktywnie zaangażowane w zrównoważone systemy żywnościowe, które sprzyjają dobremu samopoczuciu i przyczyniają się do zdrowia naszej planety."
+  },
+  "mattersSection": {
+    "title": "Dlaczego to ważne",
+    "firstText": "Pogarszający się stan środowiska naturalnego zagraża naszemu dobrostanowi i przyszłości nadchodzących pokoleń.",
+    "secondText": "Wyposażając młodzież w umiejętności krytycznego myślenia, rozwiązywania problemów i wytrzymałości, przygotowujemy ich do stawienia czoła globalnym wyzwaniom i stania się odpowiedzialnymi obywatelami zaangażowanymi w zrównoważoną przyszłość."
+  },
+  "solutionSection": {
+    "title": "Nasze rozwiązania",
+    "first": {
+      "title": "1. Założenie ogrodu szkolnego lub społecznościowego",
+      "text": "Założenie ogrodu szkolnego lub społecznego to skuteczny sposób na zjednoczenie ludzi, wspieranie praktycznej nauki i promowanie zdrowego stylu życia. Ogrody te służą jako żywa uczelnia, która uczy zrównoważonych praktyk, łączy ludzi z naturą i inspiruje poczucie dumy z uprawy i dzielenia się świeżym, pożywnym jedzeniem.",
+      "firstItem": {
+        "title": "Możliwości uzyskania dotacji",
+        "text": "W miarę dostępności funduszy ResiliencyGardens.org zapewnia wsparcie dla szkolnej i społecznej infrastruktury ogrodowej, pokrywając wydatki na materiały budowlane, glebę, nasiona i narzędzia, a także zasoby edukacyjne, w tym instruktorów i warsztaty. Zapraszamy do zapoznania się z poniższymi programami dotacji, aby znaleźć ten, który najlepiej odpowiada Twoim potrzebom."
+      },
+      "secondItem": {
+        "title": "Edukacyjne ogrody integracyjne w polskich szkołach"
+      },
+      "winners": "Poznaj zwycięzców",
+      "donate": "Przekaż darowiznę, aby wesprzeć więcej szkół"
+    },
+    "second": {
+      "title": "2. Załóż własny ogród",
+      "subtext": "Każdy może uprawiać warzywa i każdy lubi patrzeć, jak zasiane przez niego nasiona kiełkują i rosną. Niezależnie od tego, czy chodzi o parapet, balkon czy grządkę w ogrodzie, wszyscy możemy coś zmienić.",
+      "firstText": "Osoby, które mają dostęp do własnego ogródka warzywnego, spożywają o 40% więcej świeżych warzyw i ziół, a co za tym idzie, jedzą mniej przetworzonej żywności.",
+      "secondText": "Warzywa i zioła tracą 30-50% swoich wartości odżywczych w ciągu 5-10 dni. Lokalne ogrody warzywne umożliwiają spożywanie warzyw i ziół bezpośrednio po zbiorach.",
+      "thirdText": "Praca w ogrodzie ma pozytywny wpływ na osobiste samopoczucie, a wspólne uprawianie ogrodu wzmacnia więzi społeczne."
+    }
+  },
+  "startSection": {
+    "title": "Od czego zacząć?",
+    "firstText": "Jeśli nie masz ziemi, nie oznacza to, że nie możesz uprawiać ogrodu.",
+    "secondText": "Ogród ma cztery podstawowe potrzeby:"
+  },
+  "pointsSection": [
+    {
+      "title": "Gleba.",
+      "text": "Żyzna gleba jest niezbędna do uprawy warzyw, owoców i innych roślin.",
+      "color": "#ff7235"
+    },
+    {
+      "title": "Słońce.",
+      "text": "Większość warzyw potrzebuje co najmniej 6 godzin niezakłóconego nasłonecznienia lub sztucznego światła dziennie, chociaż niektóre uprawy, takie jak brokuły, sałata, szpinak i inne warzywa, mogą być mniej wymagające.",
+      "color": "#ffbe21"
+    },
+    {
+      "title": "Woda.",
+      "text": "Rośliny potrzebują wody do niezbędnych procesów biologicznych, które umożliwiają im wzrost, rozwój i rozmnażanie.",
+      "color": "#30b9e2"
+    },
+    {
+      "title": "Nasiona.",
+      "text": "Pozyskuj i kupuj lokalnie wysokiej jakości nasiona, które są odpowiednie dla twojego klimatu i rodzaju ogrodu.",
+      "color": "#4a9b52"
+    }
+  ],
+  "sliderSection": {
+    "title": "Czego potrzebujesz",
+    "text": "Ogród można uprawiać na wiele sposobów: w gruncie, w podniesionych rzędach, w podniesionych grządkach, w belach słomy i w pojemnikach"
+  },
+  "developmentSection": {
+    "title": "Ogrodnictwo wspomaga rozwój dziecka",
+    "cards": [
+      {
+        "title": "Rozwój sensoryczny",
+        "text": "Ogród to dla dziecka miejsce cudów. Dzieci są zaabsorbowane teksturami, kształtami, kolorami i zapachami żywych roślin i podekscytowane, gdy mogą cieszyć się ich smakiem. Ogrodnictwo pomaga dzieciom rozwijać koordynację wzrokowo-ruchową i budować siłę fizyczną oraz ważne umiejętności motoryczne, takie jak cięcie, sadzenie i pisanie."
+      },
+      {
+        "title": "Umiejętności intelektualne",
+        "text": "Ogrodnictwo wymaga planowania, umiejętności, której potrzebuje każdy. Dzieci powinny być włączone w ten proces. Wspieraj je w nauce przygotowywania gleby, sadzenia, podlewania i pielenia. Mogą zgłaszać, co już zrobiły i co ich zdaniem powinny zrobić w następnej kolejności. Z czasem będą w stanie zidentyfikować różnice i cechy korzeni, łodyg, kwiatów, liści, nasion i owoców. Ogrodnictwo to świetny sposób, aby pomóc dzieciom nauczyć się czegoś pożytecznego!"
+      },
+      {
+        "title": "Umiejętności społeczne",
+        "text": "Dzieci uczą się współpracy, wspólnie pielęgnując i dbając o swoje rośliny. Mogą wspólnie malować doniczki i dzielić się wiedzą na temat różnych roślin. Sadząc drzewa lub rośliny w szkole, mogą poznać nowych przyjaciół, zdobyć uznanie i poszerzyć swoją wiedzę."
+      }
+    ]
+  },
+  "activitiesSection": {
+    "title": "Materiały edukacyjne i zajęcia",
+    "text": "W Resiliency Gardens zawsze szukamy pomocnych materiałów drukowanych i wideo dla dzieci i dorosłych, aby ogrodnictwo było zabawne i edukacyjne. Zapoznaj się z poniższymi tematami i kliknij, aby dowiedzieć się więcej i pobrać bezpłatne materiały do wydrukowania",
+    "cards": [
+      {
+        "image": "/images/activities/1.png",
+        "text": "Projektowanie i zakładanie ogrodu",
+        "file": "/files/Designing and Placing a School Garden.pdf"
+      },
+      {
+        "image": "/images/activities/2.png",
+        "text": "Rozpoczęcie programu szkolnych ogrodów",
+        "file": "/files/Starting a school garden program.pdf"
+      },
+      {
+        "image": "/images/activities/3.png",
+        "text": "Wermikompostowanie dla zdrowia roślin i planety",
+        "file": "/files/Vermi-composting for Plant & Planet Health.pdf"
+      },
+      {
+        "image": "/images/activities/4.png",
+        "text": "Pomysły na zrównoważone ogrodnictwo z całego świata",
+        "file": "/files/Sustainable-Gardening-Around-Globe-lesson.pdf"
+      }
+    ]
+  },
+  "partnersSection": {
+    "title": "Nasi partnerzy",
+    "subtext": "Serdeczne podziękowania dla naszych partnerów za ich zaangażowanie i wkład w program Ogrodów Szkolnych i Społecznych Resiliency Garden.",
+    "cards": [
+      {
+        "type": "vertical",
+        "image": "/images/partners/5.png",
+        "text": "Trips Beyond the Classroom oferuje innowacyjną edukację, która wywiera wpływ na całe życie i pokolenia, podnosząc globalną świadomość wśród młodzieży i inspirując przyszłych liderów. Bezpieczne wyzwania poprzez podróże, pobyty u rodzin, pracę społeczną i wirtualną współpracę zapewniają realne doświadczenie, motywując uczniów i nauczycieli do wyjścia poza klasę! Specjalny program Beyond the Garden został zaprojektowany, aby wspierać instytucje edukacyjne w tworzeniu młodych strażników środowiska poprzez ogrodnictwo. Specjalny program Beyond the Garden wspierał pięć instytucji edukacyjnych w tworzeniu młodych strażników środowiska poprzez ogrodnictwo."
+      },
+      {
+        "type": "vertical",
+        "image": "/images/partners/1.png",
+        "text": "Rybnik, w południowej Polsce, jest liderem w zakresie zrównoważonych praktyk żywieniowych. Miasto stworzyło Zrównoważony Zestaw Narzędzi dla Posiłków Publicznych, aby promować dietę roślinną wśród młodzieży. W ramach projektu StratKIT+ Rybnik dopasował 10% dotacji Resiliency Gardens, ulepszając infrastrukturę szkolnych ogrodów. W 2024 r. 1484 uczniów z dziewięciu szkół uczestniczyło w pracach ogrodniczych, zwiększając zaangażowanie społeczności i integrując zrównoważone systemy żywnościowe z edukacją. Od 2024 r. 4562 uczniów z jedenastu szkół uczestniczy w ogrodnictwie, zwiększając zaangażowanie społeczności i integrując zrównoważone systemy żywnościowe z edukacją."
+      },
+      {
+        "image": "/images/partners/4.png",
+        "text": "Seed Programs International dostarcza dobrej jakości nasiona, wiedzę i materiały szkoleniowe organizacjom humanitarnym działającym na całym świecie w celu złagodzenia głodu i ubóstwa. Dotacje rzeczowe SPI umożliwiają szkołom, uniwersytetom, rodzinom zastępczym i organizacjom społecznym zakładanie jadalnych ogrodów do nauki i dzielenia się. Dotacje rzeczowe SPI pomagają szkołom RG w zakładaniu jadalnych ogrodów do nauki i dzielenia się. Dotacje rzeczowe SPI pomogły 27 szkołom w Polsce założyć Resiliency Gardens do nauki i dzielenia się."
+      },
+      {
+        "image": "/images/partners/2.png",
+        "text": "Fundacja Naturalnego Rozwoju is dedicated to the holistic development of children and youth, with a special emphasis on ecological education and fostering connections with nature. Our mission is to nurture a generation of young individuals who are not only environmentally responsible but also actively engaged in their communities."
+      },
+      {
+        "image": "/images/partners/3.png",
+        "text": "KidsGardening.org stwarza dzieciom możliwości zabawy, nauki i rozwoju poprzez ogrodnictwo,. angażując ich naturalną ciekawość i zachwyt. Przekazane przez KG narzędzia edukacyjne dla nauczycieli, rodziców i opiekunów dzieci są teraz dostępne w języku polskim i ukraińskim."
+      },
+      {
+        "text": "Dołącz do nas w tworzeniu zdrowszej i bardziej zrównoważonej przyszłości!",
+        "link": "Become a Corporate Sponsor",
+        "file": "/files/Corporate-appeal.pdf"
+      }
+    ]
+  },
+  "contacts": {
+    "title": "Skontaktuj się z nami",
+    "text": "Aby dowiedzieć się więcej, prosimy o kontakt z June Lavelle pod adresem"
+  },
+  "footer": {
+    "links": {
+      "first": [
+        {
+          "text": "Podarować",
+          "id": "main"
+        },
+        {
+          "text": "O nas",
+          "id": "about"
+        },
+        {
+          "text": "Nasze rozwiązania",
+          "id": "solution"
+        }
+      ],
+      "second": [
+        {
+          "text": "Poznaj zwycięzców",
+          "id": "winners"
+        },
+        {
+          "text": "Od czego zacząć",
+          "id": "start"
+        },
+        {
+          "text": "Czego potrzebujesz",
+          "id": "slider"
+        }
+      ],
+      "third": [
+        {
+          "text": "Dzieci & ogród",
+          "id": "development"
+        },
+        {
+          "text": "Zasoby edukacyjne",
+          "id": "resources"
+        },
+        {
+          "text": "Partnerzy",
+          "id": "partners"
+        }
+      ]
+    }
+  }
+}

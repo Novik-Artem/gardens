@@ -1,32 +1,23 @@
 <template>
   <div :class="$style.container">
-    <div :class="$style.title">Our Solutions</div>
+    <div :class="$style.title">{{ $t("solutionSection.title") }}</div>
     <div :class="$style.content">
       <div :class="$style.column">
         <div :class="$style.item">
           <div :class="$style.subtitle">
-            1. Start a school or community garden
+            {{ $t("solutionSection.first.title") }}
           </div>
           <div :class="$style.text">
-            Starting a school or community garden is a powerful way to bring
-            people together, foster hands-on learning, and promote healthy
-            living. These gardens serve as living classrooms that teach
-            sustainable practices, connect individuals with nature, and inspire
-            a sense of pride in growing and sharing fresh, nutritious food.
+            {{ $t("solutionSection.first.text") }}
           </div>
           <div :class="$style.subtext">
-            <li>Grant Opportunities</li>
+            <li>{{ $t("solutionSection.first.firstItem.title") }}</li>
             <div>
-              As funds become available, ResiliencyGardens.org provides support
-              for school and community garden infrastructure, covering expenses
-              for construction materials, soil, seeds, and tools, as well as
-              educational resources, including instructors and workshops. We
-              invite you to explore our grant programs below to find the one
-              that best suits your needs.
+              {{ $t("solutionSection.first.firstItem.text") }}
             </div>
           </div>
           <div :class="$style.subtext">
-            <li>Inclusive Educational Gardens in Polish Schools</li>
+            <li>{{ $t("solutionSection.first.secondItem.title") }}</li>
           </div>
         </div>
         <Applicate :class="$style.app" />
@@ -36,11 +27,11 @@
           <div :class="$style.image">
             <img src="/images/solution/1-horizontal.png" alt="" />
           </div>
-          <div :class="$style.subtitle">2. Start your own garden</div>
+          <div :class="$style.subtitle">
+            {{ $t("solutionSection.second.title") }}
+          </div>
           <div :class="$style.text">
-            Anyone can grow vegetables and everyone enjoys watching a seed they
-            planted sprout and grow. Whether on a windowsill, a balcony or in a
-            garden bed, we can all make a difference.
+            {{ $t("solutionSection.second.subtext") }}
           </div>
         </div>
         <Applicate :class="$style.adaptive" />

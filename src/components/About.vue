@@ -2,12 +2,9 @@
   <div :class="$style.container">
     <div :class="$style.row">
       <div :class="$style.text">
-        <div :class="$style.title">About us</div>
+        <div :class="$style.title">{{ $t("aboutSection.firstTitle") }}</div>
         <div :class="$style.subtext">
-          ResiliencyGardens.org is a charitable organization dedicated to
-          educating future generations by investing in school and community
-          gardens that showcase sustainable agricultural practices, promote
-          healthy living, and foster environmental stewardship.
+          {{ $t("aboutSection.firstText") }}
         </div>
       </div>
       <div :class="$style.image">
@@ -19,21 +16,21 @@
         <img src="/images/about/2.png" alt="" />
       </div>
       <div :class="$style.text">
-        <div :class="$style.title" id="goal">Our goal</div>
+        <div :class="$style.title" id="goal">
+          {{ $t("aboutSection.secondTitle") }}
+        </div>
         <div :class="$style.subtext">
-          To create dynamic, hands-on learning environments that deepen our
-          understanding of ecological processes, while inspiring people of all
-          ages to experience the joy of growing and eating their own food.
+          {{ $t("aboutSection.secondText") }}
         </div>
       </div>
     </div>
     <div :class="$style.row">
       <div :class="$style.text">
-        <div :class="$style.title" id="vision">Our vision</div>
+        <div :class="$style.title" id="vision">
+          {{ $t("aboutSection.thirdTitle") }}
+        </div>
         <div :class="$style.subtext">
-          A world where communities are resilient, self-sufficient, and actively
-          engaged in sustainable food systems that foster personal well-being
-          and contribute to the health of our planet.
+          {{ $t("aboutSection.thirdText") }}
         </div>
       </div>
       <div :class="$style.image">

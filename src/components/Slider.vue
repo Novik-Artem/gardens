@@ -1,10 +1,11 @@
 <template>
   <div :class="$style.wrapper">
     <div :class="$style.container">
-      <div :class="$style.title" id="slider">What you need</div>
+      <div :class="$style.title" id="slider">
+        {{ $t("sliderSection.title") }}
+      </div>
       <div :class="$style.text">
-        There are many ways to garden: in-ground garden beds, raised rows,
-        raised garden beds, straw bales, and container gardens
+        {{ $t("sliderSection.text") }}
       </div>
 
       <div :class="$style.slider">

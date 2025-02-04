@@ -1,7 +1,7 @@
 <template>
   <div :class="$style.wrapper">
     <div :class="$style.container">
-      <div :class="$style.title">Gardening helps a child’s development</div>
+      <div :class="$style.title">{{ $t("developmentSection.title") }}</div>
       <div :class="$style.content">
         <div :class="$style.column" v-for="item in cards" :key="item.title">
           <div :class="$style.subtitle">{{ item.title }}</div>
@@ -20,24 +20,36 @@
 </template>
 
 <script>
+import dataEn from "../locales/en.json";
+import dataPl from "../locales/pl.json";
 export default {
   data() {
     return {
-      cards: [
-        {
-          title: "Sensory development",
-          text: "A garden is a place of wonder for a child. Children are absorbed by the textures, shapes, colors and scents of living plants and thrilled when they can enjoy their taste.  Gardening helps kids develop hand-eye coordination and build physical strength and important motor skills, such as cutting, planting, and writing.",
-        },
-        {
-          title: "Intellectual skills",
-          text: "Gardening involves planning, a skill that everyone needs. Kids should be included in this process. Support them in learning how to prepare the soil, plant, water, and weed.  They can report on what they have done already and what they think they should do next. In time, they will be able to identify the differences and characteristics of roots, stems, flowers, leaves, seeds and fruits. Gardening is a fun way to help kids learn something useful!",
-        },
-        {
-          title: "Social skills",
-          text: "Kids learn to cooperate by working together to nurture and care for their plants. They can paint flowerpots together and share their knowledge of different plants. Through planting trees or plants at school, they can meet new friends, gain status and expand their knowledge. ",
-        },
-      ],
+      dataEn: dataEn.developmentSection.cards,
+      dataPl: dataPl.developmentSection.cards,
+      cards: [],
     };
+  },
+  computed: {
+    locale() {
+      return this.$i18n.locale;
+    },
+  },
+  mounted() {
+    if (this.$i18n.locale === "en") {
+      this.cards = this.dataEn;
+    } else {
+      this.cards = this.dataPl;
+    }
+  },
+  watch: {
+    locale() {
+      if (this.$i18n.locale === "en") {
+        this.cards = this.dataEn;
+      } else {
+        this.cards = this.dataPl;
+      }
+    },
   },
 };
 </script>

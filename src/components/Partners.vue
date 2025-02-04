@@ -1,9 +1,8 @@
 <template>
   <div :class="$style.container">
-    <div :class="$style.title">Our Partners</div>
+    <div :class="$style.title">{{ $t("partnersSection.title") }}</div>
     <div :class="$style.subtitle">
-      A heartfelt thanks to our partners for their dedication and contributions
-      to the Resiliency Garden’s School and Community Gardens program
+      {{ $t("partnersSection.subtext") }}
     </div>
     <div :class="$style.cards">
       <div :class="$style.card" v-for="card in cards" :key="card.image">
@@ -32,39 +31,36 @@
 </template>
 
 <script>
+import dataEn from "../locales/en.json";
+import dataPl from "../locales/pl.json";
 export default {
   data() {
     return {
-      cards: [
-        {
-          type: "vertical",
-          image: "/images/partners/5.png",
-          text: "Trips Beyond the Classroom offers Innovative Education that creates lifetime and generational impact by raising global awareness among youth to inspire future leaders. Safe challenges through travel, homestays, community service and virtual collaboration provide real-world experience, motivating students and teachers to go beyond the classroom! A special Beyond the Garden program has been designed to support educational institutions in creating young environmental stewards through gardening.",
-        },
-        {
-          type: "vertical",
-          image: "/images/partners/1.png",
-          text: "Rybnik, in southern Poland, leads in sustainable food practices. The city created the Sustainable Public Meal Toolkit to promote plant-based diets among youth. Through the StratKIT+ project, Rybnik matched 10% of Resiliency Gardens grants, improving school garden infrastructure. In 2024, 1,484 students from nine schools participated in gardening, enhancing community engagement and integrating sustainable food systems into education.",
-        },
-        {
-          image: "/images/partners/4.png",
-          text: "Seed Programs International provides good quality seed, expertise, and training materials to humanitarian organizations working around the world to alleviate hunger and poverty. SPI’s in-kind grants are enabling schools, universities, foster homes and community organizations to establish edible gardens for learning and sharing.",
-        },
-        {
-          image: "/images/partners/2.png",
-          text: "Fundacja Naturalnego Rozwoju is dedicated to the holistic development of children and youth, with a special emphasis on ecological education and fostering connections with nature. Our mission is to nurture a generation of young individuals who are not only environmentally responsible but also actively engaged in their communities.",
-        },
-        {
-          image: "/images/partners/3.png",
-          text: "KidsGardening.org creates opportunities for kids to play, learn, and grow through gardening, engaging their natural curiosity and wonder. KG’s in-kind donation of Learning Tools for educators, parents and child caregivers are now available in Polish and Ukrainian.",
-        },
-        {
-          text: "Join us in growing a healththier, more sustainable future",
-          link: "Become a Corporate Sponsor",
-          file: "/files/Corporate-appeal.pdf",
-        },
-      ],
+      dataEn: dataEn.partnersSection.cards,
+      dataPl: dataPl.partnersSection.cards,
+      cards: [],
     };
+  },
+  computed: {
+    locale() {
+      return this.$i18n.locale;
+    },
+  },
+  mounted() {
+    if (this.$i18n.locale === "en") {
+      this.cards = this.dataEn;
+    } else {
+      this.cards = this.dataPl;
+    }
+  },
+  watch: {
+    locale() {
+      if (this.$i18n.locale === "en") {
+        this.cards = this.dataEn;
+      } else {
+        this.cards = this.dataPl;
+      }
+    },
   },
 };
 </script>

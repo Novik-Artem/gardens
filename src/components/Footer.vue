@@ -36,55 +36,49 @@
 </template>
 
 <script>
+import dataEn from "../locales/en.json";
+import dataPl from "../locales/pl.json";
 import VueScrollTo from "vue-scrollto";
 export default {
   data() {
     return {
+      dataEn: dataEn.footer.links,
+      dataPl: dataPl.footer.links,
       links: {
-        first: [
-          {
-            text: "Donate",
-            id: "main",
-          },
-          {
-            text: "About us",
-            id: "about",
-          },
-          {
-            text: "Our solutions",
-            id: "solution",
-          },
-        ],
-        second: [
-          {
-            text: "Meet the winners",
-            id: "winners",
-          },
-          {
-            text: "Where to start",
-            id: "start",
-          },
-          {
-            text: "What you need",
-            id: "slider",
-          },
-        ],
-        third: [
-          {
-            text: "Children & garden",
-            id: "development",
-          },
-          {
-            text: "Learning resources",
-            id: "resources",
-          },
-          {
-            text: "Partners",
-            id: "partners",
-          },
-        ],
+        first: [],
+        second: [],
+        third: [],
       },
     };
+  },
+  computed: {
+    locale() {
+      return this.$i18n.locale;
+    },
+  },
+  mounted() {
+    if (this.$i18n.locale === "en") {
+      this.links.first = this.dataEn.first;
+      this.links.second = this.dataEn.second;
+      this.links.third = this.dataEn.third;
+    } else {
+      this.links.first = this.dataPl.first;
+      this.links.second = this.dataPl.second;
+      this.links.third = this.dataPl.third;
+    }
+  },
+  watch: {
+    locale() {
+      if (this.$i18n.locale === "en") {
+        this.links.first = this.dataEn.first;
+        this.links.second = this.dataEn.second;
+        this.links.third = this.dataEn.third;
+      } else {
+        this.links.first = this.dataPl.first;
+        this.links.second = this.dataPl.second;
+        this.links.third = this.dataPl.third;
+      }
+    },
   },
   methods: {
     scrollTo(component) {

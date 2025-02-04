@@ -1,6 +1,8 @@
 <template>
   <div :class="$style.content">
-    <div :class="$style.title" id="winners">Meet the Winners</div>
+    <div :class="$style.title" id="winners">
+      {{ $t("solutionSection.first.winners") }}
+    </div>
     <div :class="$style.cta">
       <div :class="$style.links">
         <div v-for="link in links" :key="link.text">
@@ -17,7 +19,9 @@
       >
         Donate now
       </a>
-      <div :class="$style.donate">Donate to support more schools</div>
+      <div :class="$style.donate">
+        {{ $t("solutionSection.first.donate") }}
+      </div>
     </div>
   </div>
 </template>

@@ -5,24 +5,17 @@
         <div :class="$style.list">
           <div :class="$style.li">
             <div :class="$style.purple">
-              People who have access to their own vegetable garden
-              <span>consume 40% more</span> fresh vegetables and herbs and,
-              consequently, eat less junk food.
+              {{ $t("solutionSection.second.firstText") }}
             </div>
           </div>
           <div :class="$style.li">
             <div :class="$style.orange">
-              Vegetables and herbs lose 30-50% of their useful properties within
-              <span>5-10 days.</span> Local vegetable gardens allow you to eat
-              vegetables and herbs <span>immediately after harvesting.</span>
+              {{ $t("solutionSection.second.secondText") }}
             </div>
           </div>
           <div :class="$style.li">
             <div :class="$style.green">
-              Working on a garden has a positive effect on personal
-              <span> well-being</span>
-              and gardening with others enhances
-              <span>social connections.</span>
+              {{ $t("solutionSection.second.thirdText") }}
             </div>
           </div>
         </div>
