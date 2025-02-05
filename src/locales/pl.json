@@ -120,31 +120,37 @@
       {
         "type": "vertical",
         "image": "/images/partners/5.png",
-        "text": "Trips Beyond the Classroom oferuje innowacyjną edukację, która wywiera wpływ na całe życie i pokolenia, podnosząc globalną świadomość wśród młodzieży i inspirując przyszłych liderów. Bezpieczne wyzwania poprzez podróże, pobyty u rodzin, pracę społeczną i wirtualną współpracę zapewniają realne doświadczenie, motywując uczniów i nauczycieli do wyjścia poza klasę! Specjalny program Beyond the Garden został zaprojektowany, aby wspierać instytucje edukacyjne w tworzeniu młodych strażników środowiska poprzez ogrodnictwo. Specjalny program Beyond the Garden wspierał pięć instytucji edukacyjnych w tworzeniu młodych strażników środowiska poprzez ogrodnictwo."
+        "text": "Trips Beyond the Classroom oferuje innowacyjną edukację, która wywiera wpływ na całe życie i pokolenia, podnosząc globalną świadomość wśród młodzieży i inspirując przyszłych liderów. Specjalny program Beyond the Garden wspierał pięć instytucji edukacyjnych w tworzeniu młodych strażników środowiska poprzez ogrodnictwo."
+      },
+      {
+        "image": "/images/partners/4.png",
+        "text": "Seed Programs International dostarcza dobrej jakości nasiona, wiedzę i materiały szkoleniowe organizacjom humanitarnym działającym na całym świecie w celu złagodzenia głodu i ubóstwa. Dotacje rzeczowe SPI pomogły 27 szkołom w Polsce założyć Resiliency Gardens do nauki i dzielenia się."
+      },
+      {
+        "image": "/images/partners/3.png",
+        "text": "KidsGardening.org stwarza dzieciom możliwości zabawy, nauki i rozwoju poprzez ogrodnictwo,. Przekazane przez KG narzędzia edukacyjne dla nauczycieli, rodziców i opiekunów dzieci są teraz dostępne w języku polskim i ukraińskim."
       },
       {
         "type": "vertical",
         "image": "/images/partners/1.png",
-        "text": "Rybnik, w południowej Polsce, jest liderem w zakresie zrównoważonych praktyk żywieniowych. Miasto stworzyło Zrównoważony Zestaw Narzędzi dla Posiłków Publicznych, aby promować dietę roślinną wśród młodzieży. W ramach projektu StratKIT+ Rybnik dopasował 10% dotacji Resiliency Gardens, ulepszając infrastrukturę szkolnych ogrodów. W 2024 r. 1484 uczniów z dziewięciu szkół uczestniczyło w pracach ogrodniczych, zwiększając zaangażowanie społeczności i integrując zrównoważone systemy żywnościowe z edukacją. Od 2024 r. 4562 uczniów z jedenastu szkół uczestniczy w ogrodnictwie, zwiększając zaangażowanie społeczności i integrując zrównoważone systemy żywnościowe z edukacją."
-      },
-      {
-        "image": "/images/partners/4.png",
-        "text": "Seed Programs International dostarcza dobrej jakości nasiona, wiedzę i materiały szkoleniowe organizacjom humanitarnym działającym na całym świecie w celu złagodzenia głodu i ubóstwa. Dotacje rzeczowe SPI umożliwiają szkołom, uniwersytetom, rodzinom zastępczym i organizacjom społecznym zakładanie jadalnych ogrodów do nauki i dzielenia się. Dotacje rzeczowe SPI pomagają szkołom RG w zakładaniu jadalnych ogrodów do nauki i dzielenia się. Dotacje rzeczowe SPI pomogły 27 szkołom w Polsce założyć Resiliency Gardens do nauki i dzielenia się."
+        "text": "Rybnik, w południowej Polsce, jest liderem w zakresie zrównoważonych praktyk żywieniowych. W ramach projektu StratKIT+ Rybnik dopasował 10% dotacji Resiliency Gardens, ulepszając infrastrukturę szkolnych ogrodów. Od 2024 r. 4562 uczniów z jedenastu szkół uczestniczy w ogrodnictwie, zwiększając zaangażowanie społeczności i integrując zrównoważone systemy żywnościowe z edukacją."
       },
       {
         "image": "/images/partners/2.png",
-        "text": "Fundacja Naturalnego Rozwoju is dedicated to the holistic development of children and youth, with a special emphasis on ecological education and fostering connections with nature. Our mission is to nurture a generation of young individuals who are not only environmentally responsible but also actively engaged in their communities."
-      },
-      {
-        "image": "/images/partners/3.png",
-        "text": "KidsGardening.org stwarza dzieciom możliwości zabawy, nauki i rozwoju poprzez ogrodnictwo,. angażując ich naturalną ciekawość i zachwyt. Przekazane przez KG narzędzia edukacyjne dla nauczycieli, rodziców i opiekunów dzieci są teraz dostępne w języku polskim i ukraińskim."
+        "text": "Fundacja Naturalnego Rozwoju zajmuje się holistycznym rozwojem dzieci i młodzieży, ze szczególnym naciskiem na edukację ekologiczną i budowanie więzi z naturą."
       },
       {
         "text": "Dołącz do nas w tworzeniu zdrowszej i bardziej zrównoważonej przyszłości!",
-        "link": "Become a Corporate Sponsor",
-        "file": "/files/Corporate-appeal.pdf"
+        "link": "Zostać sponsorem korporacyjnym",
+        "file": "/files/Corporate_appeal-pl.pdf"
       }
     ]
+  },
+  "sponsorsSection": {
+    "title": "Sponsorzy naszej szkoły",
+    "cardImage": "/images/as-logo.png",
+    "cardText": "Dumny wspieracz ogrodu przy Przedszkolu z Oddziałami Integracyjnymi nr 17 im. Jana Brzechwy w Rybniku."
+
   },
   "contacts": {
     "title": "Skontaktuj się z nami",

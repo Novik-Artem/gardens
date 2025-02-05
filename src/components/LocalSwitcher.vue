@@ -9,29 +9,42 @@
 
 <style lang="scss" module>
 .swither {
-  position: fixed;
-  top: 3rem;
-  right: 3rem;
-  width: 5rem;
-  height: 5rem;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  width: auto;
+  padding: 1rem 2rem;
+  background-color: #f5ebdd; // Чуть прозрачный фон для легкости
+  border-radius: 10px;
+  border: 3px solid #353535;
   z-index: 100;
-  background-color: $black;
-  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  .select {
-    font-size: 1rem;
-    color: $black;
-    cursor: pointer;
-    text-transform: uppercase;
-    border: none;
-    .option {
-      border: none;
-      font-size: 1rem;
-      color: $black;
-      cursor: pointer;
-    }
+  transition: background-color 0.2s ease-in-out;
+
+  &:hover {
+    background-color: #dad0c2;
   }
+}
+
+.select {
+  font-size: 1.5rem;
+  color: #353535;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  outline: none;
+  appearance: none;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.option {
+  font-size: 1rem;
+  color: #333;
 }
 </style>

@@ -1,12 +1,11 @@
 <template>
   <div :class="$style.container">
-    <div :class="$style.title">Our School Sponsors</div>
+    <div :class="$style.title">{{ $t("sponsorsSection.title") }}</div>
     <div :class="$style.logo">
-      <img src="/images/logo.png" alt="" />
+      <img :src="$t('sponsorsSection.cardImage')" alt="" />
     </div>
     <div :class="$style.text">
-      Proud supporter of garden at Przedszkole z Oddziałami Integracyjnymi nr 17
-      im. Jana Brzechwy in Rybnik
+      {{ $t("sponsorsSection.cardText") }}
     </div>
   </div>
 </template>
@@ -16,9 +15,9 @@
   max-width: 50rem;
   margin: 8rem auto;
   padding: 3rem;
-  background-color: $orange;
+  border: 2px solid $orange;
   border-radius: 1.625rem;
-  color: $white;
+  color: $black;
   .title {
     @include F64-900;
     text-align: center;
