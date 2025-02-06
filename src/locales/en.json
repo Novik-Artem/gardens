@@ -118,17 +118,8 @@
     "subtext": "A heartfelt thanks to our partners for their dedication and contributions to the Resiliency Garden’s School and Community Gardens program",
     "cards": [
       {
-        "type": "vertical",
-        "image": "/images/partners/5.png",
-        "text": "Trips Beyond the Classroom offers Innovative Education that creates lifetime and generational impact by inspiring future leaders. A special Beyond the Garden program supported five educational institutions in creating young environmental stewards through gardening."
-      },
-      {
         "image": "/images/partners/4.png",
         "text": "Seed Programs International provides good quality seed, expertise, and training materials to humanitarian organizations working around the world to alleviate hunger and poverty. SPI’s in-kind grants have helped 27 schools in Poland to establish Resiliency Gardens for learning and sharing."
-      },
-      {
-        "image": "/images/partners/3.png",
-        "text": "KidsGardening.org creates opportunities for kids to play, learn, and grow through gardening. KG’s in-kind donation of Learning Tools for educators, parents and child caregivers are now available in Polish and Ukrainian."
       },
       {
         "type": "vertical",
@@ -138,6 +129,15 @@
       {
         "image": "/images/partners/2.png",
         "text": "Fundacja Naturalnego Rozwoju is dedicated to the holistic development of children and youth, with a special emphasis on ecological education and fostering connections with nature."
+      },
+      {
+        "image": "/images/partners/3.png",
+        "text": "KidsGardening.org creates opportunities for kids to play, learn, and grow through gardening. KG’s in-kind donation of Learning Tools for educators, parents and child caregivers are now available in Polish and Ukrainian."
+      },
+      {
+        "type": "vertical",
+        "image": "/images/partners/5.png",
+        "text": "Trips Beyond the Classroom offers Innovative Education that creates lifetime and generational impact by inspiring future leaders. A special Beyond the Garden program supported five educational institutions in creating young environmental stewards through gardening."
       },
       {
         "text": "Join us in growing a healththier, more sustainable future",
@@ -205,6 +205,6 @@
       ]
     }
   },
-  "donateButton": "Donate now",
-  "loadDocumentButton": "view documents"
+  "donateButton": "Donate here",
+  "loadDocumentButton": "View document"
 }
