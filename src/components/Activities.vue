@@ -13,7 +13,9 @@
           <div :class="$style.text">{{ item.text }}</div>
 
           <div :class="$style.file">
-            <a :href="item.file" target="_blank">View Document</a>
+            <a :href="item.file" target="_blank">{{
+              $t("loadDocumentButton")
+            }}</a>
             <img src="/icons/download.svg" alt="" />
           </div>
         </div>

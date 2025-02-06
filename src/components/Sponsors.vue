@@ -1,24 +1,66 @@
 <template>
   <div :class="$style.container">
     <div :class="$style.title">{{ $t("sponsorsSection.title") }}</div>
-    <div :class="$style.logo">
-      <img :src="$t('sponsorsSection.cardImage')" alt="" />
-    </div>
-    <div :class="$style.text">
-      {{ $t("sponsorsSection.cardText") }}
+    <div :class="$style.sponsors">
+      <div :class="$style.sponsor" v-for="item in sponsors" :key="item.text">
+        <div :class="$style.content">
+          <div :class="$style.logo">
+            <img :src="item.image" alt="" />
+          </div>
+          <div :class="$style.text">
+            {{ item.text }}
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
+
+<script>
+import dataEn from "../locales/en.json";
+import dataPl from "../locales/pl.json";
+export default {
+  data() {
+    return {
+      dataEn: dataEn.sponsorsSection.sponsors,
+      dataPl: dataPl.sponsorsSection.sponsors,
+      sponsors: [],
+    };
+  },
+  computed: {
+    locale() {
+      return this.$i18n.locale;
+    },
+  },
+  mounted() {
+    if (this.$i18n.locale === "en") {
+      this.sponsors = this.dataEn;
+    } else {
+      this.sponsors = this.dataPl;
+    }
+  },
+  watch: {
+    locale() {
+      if (this.$i18n.locale === "en") {
+        this.sponsors = this.dataEn;
+      } else {
+        this.sponsors = this.dataPl;
+      }
+    },
+  },
+};
+</script>
 
 <style lang="scss" module>
 .container {
   max-width: 50rem;
   margin: 8rem auto;
-  padding: 3rem;
+  padding: 3rem 0;
   border: 2px solid $orange;
   border-radius: 1.625rem;
   color: $black;
   .title {
+    padding: 0 3rem;
     @include F64-900;
     text-align: center;
     margin: 0 0 3rem 0;
@@ -30,23 +72,34 @@
       line-height: 100%;
     }
   }
-  .logo {
-    display: flex;
-    justify-content: center;
-    margin: 0 0 3rem 0;
+  .sponsor {
+    border-bottom: 2px solid $orange;
+    padding-bottom: 3rem;
+    &:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+    .content {
+      padding: 0 3rem;
+      .logo {
+        display: flex;
+        justify-content: center;
+        margin: 0 0 3rem 0;
 
-    & img {
-      border-radius: 1.625rem;
-      @include custom(540) {
-        width: 8rem;
-        height: 8rem;
+        & img {
+          border-radius: 1.625rem;
+          @include custom(540) {
+            width: 8rem;
+            height: 8rem;
+          }
+        }
+      }
+      .text {
+        text-align: center;
+        font-size: 1.3rem;
+        line-height: 100%;
       }
     }
-  }
-  .text {
-    text-align: center;
-    font-size: 1.3rem;
-    line-height: 100%;
   }
 }
 </style>

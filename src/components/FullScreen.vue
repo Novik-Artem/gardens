@@ -13,7 +13,7 @@
         href="https://secure.givelively.org/donate/resiliencygardensorg"
         target="_blank"
       >
-        Donate now
+        {{ $t("donateButton") }}
       </a>
     </div>
   </div>
@@ -62,6 +62,9 @@
     @include F36-600;
     color: $white;
     text-align: center;
+    @include custom(405) {
+      font-size: 1.5rem;
+    }
     & a {
       padding: 1.5rem 3rem;
       background-color: $black;

@@ -17,7 +17,7 @@
         :class="$style.button"
         target="_blank"
       >
-        Donate now
+        {{ $t("donateButton") }}
       </a>
       <div :class="$style.donate">
         {{ $t("solutionSection.first.donate") }}

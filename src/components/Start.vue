@@ -35,10 +35,13 @@
         font-size: 5rem;
         margin: 0 0 2rem 0;
       }
-      @include custom(580) {
+      @include custom(590) {
         font-size: 3rem;
         margin: 0 0 1rem 0;
         line-height: 50%;
+      }
+      @include custom(380) {
+        line-height: 100%;
       }
       @include custom(350) {
         font-size: 2.5rem;

@@ -148,8 +148,12 @@
   },
   "sponsorsSection": {
     "title": "Our School Sponsors",
-    "cardImage": "/images/as-logo.png",
-    "cardText": "Proud supporter of garden at Przedszkole z Oddziałami Integracyjnymi nr 17 im. Jana Brzechwy in Rybnik"
+    "sponsors": [
+      {
+        "image": "/images/as-logo.png",
+        "text": "Proud supporter of garden at Przedszkole z Oddziałami Integracyjnymi nr 17 im. Jana Brzechwy in Rybnik"
+      }
+    ]
   },
   "contacts": {
     "title": "Contact us",
@@ -200,5 +204,7 @@
         }
       ]
     }
-  }
+  },
+  "donateButton": "Donate now",
+  "loadDocumentButton": "view documents"
 }
