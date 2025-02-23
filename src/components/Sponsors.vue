@@ -7,9 +7,9 @@
           <div :class="$style.logo">
             <img :src="item.image" alt="" />
           </div>
-          <div :class="$style.text">
+          <!-- <div :class="$style.text">
             {{ item.text }}
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -54,10 +54,8 @@ export default {
 <style lang="scss" module>
 .container {
   max-width: 50rem;
-  margin: 8rem auto;
+  margin: 0 auto;
   padding: 3rem 0;
-  border: 2px solid $orange;
-  border-radius: 1.625rem;
   color: $black;
   .title {
     padding: 0 3rem;
@@ -73,8 +71,6 @@ export default {
     }
   }
   .sponsor {
-    border-bottom: 2px solid $orange;
-    padding-bottom: 3rem;
     &:last-child {
       border-bottom: none;
       padding-bottom: 0;
@@ -84,21 +80,29 @@ export default {
       .logo {
         display: flex;
         justify-content: center;
-        margin: 0 0 3rem 0;
 
         & img {
-          border-radius: 1.625rem;
+          width: 20rem;
+          height: 20rem;
+          object-fit: contain;
           @include custom(540) {
             width: 8rem;
             height: 8rem;
           }
         }
       }
-      .text {
-        text-align: center;
-        font-size: 1.3rem;
-        line-height: 100%;
-      }
+      // .text {
+      //   text-align: center;
+      //   font-size: 1.3rem;
+      //   line-height: 100%;
+      // }
+    }
+  }
+  .sponsors {
+    display: flex;
+    align-items: center;
+    @include custom(750) {
+      flex-direction: column;
     }
   }
 }

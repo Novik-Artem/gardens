@@ -150,8 +150,11 @@
     "title": "Our School Sponsors",
     "sponsors": [
       {
-        "image": "/images/as-logo.png",
+        "image": "/images/sponsors/as-logo.png",
         "text": "Proud supporter of garden at Przedszkole z Oddziałami Integracyjnymi nr 17 im. Jana Brzechwy in Rybnik"
+      },
+      {
+        "image": "/images/sponsors/nicknack-logo.jpeg"
       }
     ]
   },
