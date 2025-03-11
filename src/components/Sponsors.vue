@@ -101,6 +101,7 @@ export default {
   .sponsors {
     display: flex;
     align-items: center;
+    justify-content: center;
     @include custom(750) {
       flex-direction: column;
     }

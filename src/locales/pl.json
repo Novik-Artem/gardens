@@ -151,11 +151,13 @@
     "title": "Sponsorzy naszej szkoły",
     "sponsors": [
       {
-        "image": "/images/sponsors/as-logo.png",
-        "text": "Dumny wspieracz ogrodu przy Przedszkolu z Oddziałami Integracyjnymi nr 17 im. Jana Brzechwy w Rybniku."
+        "image": "/images/sponsors/as-logo.png"
       },
       {
         "image": "/images/sponsors/nicknack-logo.jpeg"
+      },
+      {
+        "image": "/images/sponsors/ecol-logo.png"
       }
     ]
   },
