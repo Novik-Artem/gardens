@@ -1,11 +1,31 @@
 <template>
   <div :class="$style.swither">
-    <select v-model="$i18n.locale" :class="$style.select">
-      <option value="en" :class="$style.option">En</option>
-      <option value="pl" :class="$style.option">Pl</option>
-    </select>
+    <button
+      @click="changeLanguage('en')"
+      v-if="$i18n.locale === 'pl'"
+      :class="$style.button"
+    >
+      EN
+    </button>
+    <button
+      @click="changeLanguage('pl')"
+      v-if="$i18n.locale === 'en'"
+      :class="$style.button"
+    >
+      PL
+    </button>
   </div>
 </template>
+
+<script>
+export default {
+  methods: {
+    changeLanguage(lang) {
+      this.$i18n.locale = lang;
+    },
+  },
+};
+</script>
 
 <style lang="scss" module>
 .swither {
@@ -28,7 +48,7 @@
   }
 }
 
-.select {
+.button {
   font-size: 1.5rem;
   color: #353535;
   background: transparent;
@@ -36,15 +56,9 @@
   cursor: pointer;
   text-transform: uppercase;
   outline: none;
-  appearance: none;
 
   &:focus {
     outline: none;
   }
-}
-
-.option {
-  font-size: 1rem;
-  color: #333;
 }
 </style>
